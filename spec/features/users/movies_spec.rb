@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "Movies result Page", type: :feature do
-   describe "When I visit the discover page" do
+   describe "When I visit the discover page", :vcr do
       before(:each) do
          @user = User.create!(name: 'Tommy', email: 'tommy@email.com')   
       end

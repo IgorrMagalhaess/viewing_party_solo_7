@@ -1,1 +1,10 @@
-<%= @movies %>
+<%= render partial: "shared/nav" %>
+
+<%= button_to "Return to Discover", user_discover_index_path(@user) %>
+
+<%= @movies.each do |movie| %>
+<ul class="movie">
+   <li class="title">Title: <%= movie.title %></li>
+   <li class="rating">Average Rating: <%= movie.avg_rating %></li>
+</ul>
+<% end %>
