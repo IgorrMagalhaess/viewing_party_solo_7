@@ -5,7 +5,7 @@ RSpec.describe 'User discover Pages', type: :feature do
       before(:each) do
          @user = User.create!(name: 'Tommy', email: 'tommy@email.com')
    
-         visit user_discover_path
+         visit user_discover_index_path(@user)
       end
 
       it 'has a button to discover top rated movies' do
