@@ -3,7 +3,7 @@
 <body>
 <h1>Discover Movies</h1>
 
-<%= button_to "Discover Top Rated Movies", user_movies_path(@user) %>
+<%= button_to "Discover Top Rated Movies", user_movies_path(@user), method: :get %>
 
 <%= form_with url: user_movies_path(@user), method: :get do |f| %>
    <%= f.label :search, "Search by Title" %>
