@@ -46,15 +46,15 @@ http_interactions:
       - Accept-Encoding
       - Origin
       X-Cache:
-      - Miss from cloudfront
+      - Hit from cloudfront
       Via:
-      - 1.1 493e292caca329a2b20dbbc4e33d60f2.cloudfront.net (CloudFront)
+      - 1.1 8320be7308887c5e1b64ebd8be6b078e.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - ATL58-P2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - "-aENckrJyBfFSmFUF6YwBC1GFCLS9fU5yFyzX_GiHIdpNYamHSJDeQ=="
+      - NZxKdeDdeXKoBeG3nmdZE_jnuKv1tS4FSd4y0qT14CQGangOL28TSg==
     body:
       encoding: ASCII-8BIT
       string: !binary |-
