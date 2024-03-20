@@ -1,0 +1,11 @@
+<%= render partial: "shared/nav" %>
+
+<%= button_to "Return to Discover Page", user_discover_index_path(@user), method: :get %>
+
+<%= @facade.movies.each do |movie| %>
+
+<ul class="movie">
+   <li class="title">Title: <%= link_to movie.title, user_movie_path(@user, movie.id) %></li>
+   <li class="rating">Average Rating: <%= movie.avg_rating %></li>
+</ul>
+<% end %>
