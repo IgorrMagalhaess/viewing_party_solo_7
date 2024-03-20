@@ -12,7 +12,7 @@ class MoviesFacade
       else
          json = service.get_movies_by_title(@params)
       end
-      j
+
       @movies = json[:results].map do |movie_data|
          Movie.new(movie_data)
       end
