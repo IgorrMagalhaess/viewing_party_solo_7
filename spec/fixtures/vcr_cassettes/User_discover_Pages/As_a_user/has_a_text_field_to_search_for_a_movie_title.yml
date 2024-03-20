@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/discover/movie?with_keywords=Star%20Wars
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiODIyOGEzZGY1YTBjMTU3ZjI2YjdiNjhjOTE2ZmYyMyIsInN1YiI6IjY1Zjg3OGU1NTk0Yzk0MDE3YzNhN2RhZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ywY2YQS5tmQ6HE6Mo37EpxSNsz5NbyLXWEHMUHvc_jc
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 20 Mar 2024 14:35:51 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=0
+      X-Memc:
+      - MISS
+      X-Memc-Key:
+      - 0a5fe3234d1840eb0a1f44a6fcbc5ff1
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '0'
+      Etag:
+      - W/"0e23279b004381f72a34159d5c7dfd1f"
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 1b0d3a52a9221f6e54874cb566a09ea2.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - ATL58-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - Vw_EY9d6AOCbqCMrxqcMyF5iBZpRkxQHI3X15NqbrAf9sTXshrEJzg==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"results":[],"total_pages":1,"total_results":0}'
+  recorded_at: Wed, 20 Mar 2024 14:35:51 GMT
+recorded_with: VCR 6.2.0
