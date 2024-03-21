@@ -21,7 +21,6 @@ class MoviesFacade
    def movie_by_id
       service = MoviesService.new
       movie_json = service.get_movie_by_id(@params)
-      
       @movie = Movie.new(movie_json)
    end
 
@@ -40,9 +39,13 @@ class MoviesFacade
       service = MoviesService.new
       reviews_json = service.get_movie_reviews_by_id(@params)
 
-      reviews = reviews_json[:results].map do |review|
-         require 'pry' ; binding.pry
+      reviews = Hash.new()
+      reviews_json[:results].map do |review|
+         reviews[review[:author]] = review[:content]
       end
+      
+      @movie.reviews = reviews.take(10)
+      @movie_reviews = @movie.reviews
    end
 
    def convert_min_to_hours(min)

@@ -4,7 +4,7 @@ class Movie
                :avg_rating,
                :runtime,
                :genre,
-               :description,
+               :overview,
                :review_count
 
    attr_accessor :cast, :reviews
@@ -16,9 +16,9 @@ class Movie
       @avg_rating = attributes[:vote_average]
       @runtime = attributes[:runtime] # Parsed in minutes, transform to hours
       @genre = attributes[:genres] # array of hashes
-      @description = attributes[:overview]
+      @overview = attributes[:overview]
       @cast = [] # movie credits endpoint
       @review_count = attributes[:vote_count]
-      @reviews = [] # movie reviews endpoint
+      @reviews = {} # movie reviews endpoint
    end
 end

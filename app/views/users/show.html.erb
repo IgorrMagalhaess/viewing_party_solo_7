@@ -1,5 +1,14 @@
-<h1><%= "#{@user.name}'s Dashboard" %></h1><br>
 
+<h1><%= "#{@user.name}'s Dashboard" %></h1><br>
+<br>
+<div class="nav-container container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <ul class="nav navbar-nav pull-right">
+      <li><%= link_to 'Discover New Movies', user_discover_index_path(@user), style: 'pull-right' %></li>
+    </ul>
+  </nav>
+</div>      
+<br>
 <section class="viewing_parties">
   <% @user.viewing_parties.each do |party| %>
     <div class="viewing_party">

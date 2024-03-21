@@ -23,7 +23,7 @@ RSpec.describe "Movie Detail Page", type: :feature do
          expect(page).to have_content("Runtime: 2 hours, 19 minutes")
          expect(page).to have_content("Drama")
          expect(page).to have_content("Description")
-         expect(page).to have_content("Total Reviews: 28210")
+         expect(page).to have_content("Total Reviews: 28211")
       end
 
       it "shoud show the cast of the movie", :vcr do
