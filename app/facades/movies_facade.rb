@@ -17,4 +17,37 @@ class MoviesFacade
          Movie.new(movie_data)
       end
    end
+
+   def movie_by_id
+      service = MoviesService.new
+      movie_json = service.get_movie_by_id(@params)
+      
+      @movie = Movie.new(movie_json)
+   end
+
+   def cast_by_movie_id
+      service = MoviesService.new
+      movie_cast_json = service.get_movie_cast_by_id(@params)
+
+      cast = movie_cast_json[:cast].map do |movie_cast|
+         movie_cast[:name]
+      end
+      @movie.cast = cast.take(10)
+      @movie_cast = @movie.cast
+   end
+
+   def reviews_by_movie_id
+      service = MoviesService.new
+      reviews_json = service.get_movie_reviews_by_id(@params)
+
+      reviews = reviews_json[:results].map do |review|
+         require 'pry' ; binding.pry
+      end
+   end
+
+   def convert_min_to_hours(min)
+      hours = min / 60
+      min = min % 60
+      "#{hours} hours, #{min} minutes"
+   end
 end

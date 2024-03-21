@@ -5,9 +5,10 @@ class Movie
                :runtime,
                :genre,
                :description,
-               :cast_members,
-               :review_count,
-               :review
+               :review_count
+
+   attr_accessor :cast, :reviews
+                  
    
    def initialize(attributes)
       @id = attributes[:id]
@@ -16,8 +17,8 @@ class Movie
       @runtime = attributes[:runtime] # Parsed in minutes, transform to hours
       @genre = attributes[:genres] # array of hashes
       @description = attributes[:overview]
-      @cast_members = attributes[:cast_members] # movie credits endpoint
+      @cast = [] # movie credits endpoint
       @review_count = attributes[:vote_count]
-      @review = attributes[:reviews] # movie reviews endpoint
+      @reviews = [] # movie reviews endpoint
    end
 end

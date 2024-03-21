@@ -1,0 +1,31 @@
+
+<%= button_to "Create a viewing party", user_movie_parties_path(@user, @facade.movie_by_id.id), method: :get %>
+<%= button_to "Return to Discover Page", user_discover_index_path(@user), method: :get %>
+
+<h1><%= @facade.movie_by_id.title %> Details</h1>
+
+<ul>
+   <li>Average Rating: <%= @facade.movie_by_id.avg_rating %></li><br>
+   <li>Total Reviews: <%= @facade.movie_by_id.review_count %></li>
+   <li>Runtime: <%= @facade.convert_min_to_hours(@facade.movie_by_id.runtime) %></li><br>
+   <li>Description: <% @facade.movie_by_id.description %></li>
+   <li>Genre:</li>
+   <ul>
+      <% @facade.movie_by_id.genre.each do |genre| %>
+         <li><%= genre[:name] %></li>
+      <% end %>
+   </ul><br>
+   <li>Cast:</li>
+   <ul>
+      <% @facade.cast_by_movie_id.each do |actor| %>
+         <li><%= actor %></li>
+      <% end %>
+   </ul>
+   <li>Reviews:</li>
+   <ul>
+      <% @facade.reviews_by_movie_id.each do |review| %>
+         <li><%= review %></li>
+      <% end %>
+   </ul>
+</ul>
+
