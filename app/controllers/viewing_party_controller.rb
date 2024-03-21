@@ -7,7 +7,7 @@ class ViewingPartyController < ApplicationController
    def create
       @viewing_party = ViewingParty.new(viewing_party_params)
       if @viewing_party.save && duration_valid?
-         host_party = UserParty.create!(user_id: @user.id, viewing_party_id: @viewing_party.id, host: true)
+         save_host(@user.id, @viewing_party.id)
          save_guests(params, @viewing_party.id)
 
          redirect_to user_path(@user)
@@ -16,6 +16,10 @@ class ViewingPartyController < ApplicationController
          redirect_to new_user_movie_viewing_party_path(@user, @movie.id)
          flash.notice = "All fields must be completed. Duration cannot be lower than #{@movie.runtime} minutes."
       end
+   end
+
+   def show
+      
    end
 
    private
@@ -49,6 +53,10 @@ class ViewingPartyController < ApplicationController
             UserParty.create!(user_id: user.id, viewing_party_id: viewing_party, host: false)
          end
       end
+   end
+
+   def save_host(user, viewing_party)
+      host_party = UserParty.create!(user_id: user, viewing_party_id: viewing_party, host: true)
    end
 
    def build_date(params)
