@@ -14,7 +14,7 @@ RSpec.describe "Movie Detail Page", type: :feature do
 
          click_button("Create a viewing party")
 
-         expect(current_path).to eq (user_movie_new_viewing_party_path(@user1, 550))
+         expect(current_path).to eq (new_user_movie_viewing_party_path(@user1, 550))
       end
 
       it 'Should have a button to return to the discover page', :vcr do

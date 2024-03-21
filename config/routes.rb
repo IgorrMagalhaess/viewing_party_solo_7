@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :create] do
     resources :discover, only: [:index]
     resources :movies, only: [:index, :show] do
-      get "/users/:id/movies/:movie_id/viewing_party/new", to: "viewing_party#new", as: "new_viewing_party"
+      resources :viewing_party, only: [:new, :create]
     end
   end
 end
