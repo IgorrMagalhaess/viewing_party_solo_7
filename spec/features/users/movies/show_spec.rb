@@ -49,5 +49,7 @@ RSpec.describe "Movie Detail Page", type: :feature do
          expect(page).to have_content("Author: Brett Pascoe")
          expect(page).to have_content("Review: In my top 5 of all time favourite movies. Great story line and a movie you can watch over and over again.")
       end
+
+      it ''
    end
 end

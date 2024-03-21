@@ -53,4 +53,14 @@ class MoviesFacade
       min = min % 60
       "#{hours} hours, #{min} minutes"
    end
+
+   def where_to_watch
+      service = MoviesService.new
+      where_to_watch_json = service.get_where_to_watch(@params)
+
+      buy = where_to_watch_json[:results][:US][:buy]
+      rent = where_to_watch_json[:results][:US][:rent]
+
+      @watch = [buy, rent]
+   end
 end

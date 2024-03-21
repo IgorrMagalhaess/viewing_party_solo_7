@@ -1,5 +1,5 @@
 class ViewingPartyController < ApplicationController
-   before_action :set_user_and_movie, only: [:new, :create]
+   before_action :set_user_and_movie, only: [:new, :create, :show]
 
    def new
    end
@@ -19,7 +19,8 @@ class ViewingPartyController < ApplicationController
    end
 
    def show
-      
+      @facade = MoviesFacade.new(params[:movie_id])
+      @watch = @facade.where_to_watch
    end
 
    private
