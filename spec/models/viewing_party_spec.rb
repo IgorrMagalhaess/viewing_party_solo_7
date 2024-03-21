@@ -14,6 +14,12 @@ RSpec.describe ViewingParty, type: :model do
       it { should have_many(:users).through(:user_parties) }
   end
 
+  describe 'Validations' do
+    it { should validate_presence_of :duration}
+    it { should validate_presence_of :date}
+    it { should validate_presence_of :start_time}
+  end
+
   describe "instance methods" do
     it "returns user that is hosting the party" do
       expect(@party.find_host).to eq (@user_1)
