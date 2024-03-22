@@ -12,8 +12,10 @@
       <legend>Guests:</legend>
       <% User.all.each do |guest| %>
          <div>
-            <%= check_box_tag 'viewing_party[user_ids][]', guest.id %>
-            <%= label_tag "viewing_party[user_ids][]", guest.name %>
+            <% if guest.id != @user.id %>
+               <%= check_box_tag 'viewing_party[user_ids][]', guest.id %>
+               <%= label_tag "viewing_party[user_ids][]", guest.name %>
+            <% end %>
          </div>
       <% end %>
    </fieldset>
