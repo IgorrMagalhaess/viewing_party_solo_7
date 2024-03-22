@@ -12,7 +12,7 @@ RSpec.describe 'User Show Page' do
          @user_party = UserParty.create!(viewing_party_id: @viewing_party.id, user_id: @user2.id, host: false)
       end
 
-      it 'should see the viewing partys that the user has been invited to', :vcr do
+      it 'should see the viewing partys that the user is hosting', :vcr do
          visit user_path(@user1)
 
          expect(page).to have_content("Tommy's Dashboard")
@@ -22,7 +22,17 @@ RSpec.describe 'User Show Page' do
 
          expect(page).to have_content("Fight Club")
          expect(page).to have_content("You are the host!")
-         save_and_open_page
+      end
+
+      it 'should see the viewing partys that the user is hosting', :vcr do
+         visit user_path(@user2)
+
+         expect(page).to have_content("Sam's Dashboard")
+         expect(page).to have_content("2024-03-24")
+         expect(page).to have_content("20:00")
+         expect(page).to have_content('Tommy')
+
+         expect(page).to have_content("Fight Club")
       end
    end
 end

@@ -16,7 +16,7 @@
         <img src="https://image.tmdb.org/t/p/w500<%= movie_facade.movie_by_id.poster_path %>" alt="<%= movie_facade.movie_by_id.title %>">
         <p>Movie Title: <%= link_to movie_facade.movie_by_id.title, user_movie_path(@user, movie_facade.movie_by_id.id) %></p>
         <p>Party Time: <%= @invited_to_viewing_parties[index].date %> at <%= @invited_to_viewing_parties[index].start_time %></p>
-        <p>Host: <%= @hosting_viewing_parties[index].find_host.name %></p>
+        <p>Host: <%= @invited_to_viewing_parties[index].find_host.name %></p>
         <p>Who's Coming?</p>
         <ol>
           <% @invited_to_viewing_parties[index].users.each do |attendee| %>

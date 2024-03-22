@@ -7,7 +7,7 @@ class UsersController < ApplicationController
    def show
       @user = User.find(params[:id])
       @invited_to_viewing_parties = @user.invited_to_viewing_parties
-      @hosting_viewing_parties = @user.hosting_viewing_parties
+      @hosting_viewing_parties = @user.hosting_viewing_parties ||= []
       
       @invited_movies_facade = initialize_movies_facade(@invited_to_viewing_parties)
       @hosting_movies_facade = initialize_movies_facade(@hosting_viewing_parties)
