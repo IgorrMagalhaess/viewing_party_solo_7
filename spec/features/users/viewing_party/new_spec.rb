@@ -35,8 +35,10 @@ RSpec.describe "New Viewing Party Page", type: :feature do
          expect(page).to have_content("Guests:")
 
          User.all.each do |guest|
-            checkbox = find("input[type='checkbox'][value='#{guest.id}']")
-            expect(checkbox).to be_visible
+            if guest.id != @user1.id
+               checkbox = find("input[type='checkbox'][value='#{guest.id}']")
+               expect(checkbox).to be_visible
+            end
          end
       end
 
@@ -50,9 +52,8 @@ RSpec.describe "New Viewing Party Page", type: :feature do
          select "00", from: "_start_time_5i"
 
          within 'fieldset' do
-            3.times do |index|
-               check "viewing_party[user_ids][]", option: User.all[index].id
-            end
+            check "viewing_party[user_ids][]", option: @user2.id
+            check "viewing_party[user_ids][]", option: @user3.id
          end
 
          click_button "Create Viewing Party"
@@ -71,9 +72,8 @@ RSpec.describe "New Viewing Party Page", type: :feature do
          select "00", from: "_start_time_5i"
 
          within 'fieldset' do
-            3.times do |index|
-               check "viewing_party[user_ids][]", option: User.all[index].id
-            end
+            check "viewing_party[user_ids][]", option: @user2.id
+            check "viewing_party[user_ids][]", option: @user3.id
          end
 
          click_button "Create Viewing Party"
