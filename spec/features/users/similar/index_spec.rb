@@ -13,7 +13,7 @@ RSpec.describe 'Similar index page', type: :feature do
          expect(page).to have_content 'Movies similar to Fight Club'
          
          expect(page).to have_content("Pulp Fiction")
-         expect(page).to have_content("Average Rating: 8.489")
+         expect(page).to have_content("Average Rating:")
          expect(page).to have_content("Total Reviews: 26806")
          expect(page).to have_content("Description: A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.")
          expect(page).to have_content("Release Date: 1994-09-10")

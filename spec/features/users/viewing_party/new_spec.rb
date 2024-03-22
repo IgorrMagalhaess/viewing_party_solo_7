@@ -49,7 +49,11 @@ RSpec.describe "New Viewing Party Page", type: :feature do
          select "20", from: "_start_time_4i"
          select "00", from: "_start_time_5i"
 
-         first('input[type="checkbox"]').check
+         within 'fieldset' do
+            3.times do |index|
+               check "viewing_party[user_ids][]", option: User.all[index].id
+            end
+         end
 
          click_button "Create Viewing Party"
 
@@ -66,7 +70,11 @@ RSpec.describe "New Viewing Party Page", type: :feature do
          select "20", from: "_start_time_4i"
          select "00", from: "_start_time_5i"
 
-         first('input[type="checkbox"]').check
+         within 'fieldset' do
+            3.times do |index|
+               check "viewing_party[user_ids][]", option: User.all[index].id
+            end
+         end
 
          click_button "Create Viewing Party"
 

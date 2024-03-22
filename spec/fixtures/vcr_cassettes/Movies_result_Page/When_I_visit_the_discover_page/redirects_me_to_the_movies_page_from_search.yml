@@ -27,36 +27,34 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Fri, 22 Mar 2024 15:46:46 GMT
+      - Fri, 22 Mar 2024 16:52:35 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=2862
+      - public, max-age=27605
       X-Memc:
       - HIT
       X-Memc-Key:
       - 759d9067879b7b45cf8ef817f6a87cd2
       X-Memc-Age:
-      - '20733'
+      - '850'
       X-Memc-Expires:
-      - '2862'
+      - '27605'
       Etag:
-      - W/"193635f05e7a8805ff81936e421d4697"
+      - W/"86d04363532cdce0a889bd7d62afd180"
       Vary:
       - Accept-Encoding
       - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 5fd27ad57405b4d88e623e99e69328f4.cloudfront.net (CloudFront)
+      - 1.1 d2a8134957dfaa119e0955491e61bb9c.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - ATL58-P2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - qoNSLL2A6-i5Ka9peeOlS3sKJO1loHiH2jQjueEvIHD_CMFNLNIxGg==
-      Age:
-      - '1'
+      - Ppj5ywfd7SZZPXh7cjkRZqRX5BDoOsh08IOu3DBjY5Wn_05aPLToTA==
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg","genre_ids":[18,80],"id":278,"original_language":"en","original_title":"The
@@ -66,7 +64,7 @@ http_interactions:
         amoral warden. During his long stretch in prison, Dufresne comes to be admired
         by the other inmates -- including an older prisoner named Red -- for his integrity
         and unquenchable sense of hope.","popularity":126.841,"poster_path":"/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg","release_date":"1994-09-23","title":"The
-        Shawshank Redemption","video":false,"vote_average":8.704,"vote_count":25817},{"adult":false,"backdrop_path":"/u6hgtSIzW8nDKKWmun9JDhZz2fp.jpg","genre_ids":[99],"id":546312,"original_language":"en","original_title":"Shawshank:
+        Shawshank Redemption","video":false,"vote_average":8.705,"vote_count":25819},{"adult":false,"backdrop_path":"/u6hgtSIzW8nDKKWmun9JDhZz2fp.jpg","genre_ids":[99],"id":546312,"original_language":"en","original_title":"Shawshank:
         The Redeeming Feature","overview":"Film critic and presenter Mark Kermode
         explores the fascination and praise audiences, fans and critics have behind
         the classic The Shawshank Redemption (1994) and how its importance grew higher
@@ -77,5 +75,5 @@ http_interactions:
         Springs Eternal: A Look Back at The Shawshank Redemption","overview":"Documentary
         about the movie.","popularity":1.861,"poster_path":"/v4wcS8XwUn5zl57rYRMzMnKahmt.jpg","release_date":"2004-06-25","title":"Hope
         Springs Eternal: A Look Back at The Shawshank Redemption","video":false,"vote_average":7.4,"vote_count":5}],"total_pages":1,"total_results":3}'
-  recorded_at: Fri, 22 Mar 2024 15:46:47 GMT
+  recorded_at: Fri, 22 Mar 2024 16:52:35 GMT
 recorded_with: VCR 6.2.0

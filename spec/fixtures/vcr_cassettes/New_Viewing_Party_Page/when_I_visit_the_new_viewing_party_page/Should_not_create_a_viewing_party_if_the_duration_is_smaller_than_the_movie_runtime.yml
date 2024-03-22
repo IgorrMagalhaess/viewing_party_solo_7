@@ -54,9 +54,9 @@ http_interactions:
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - TTlLb_R9b_rmtGdFGMRV-Sdjq5XHorvJsWzsY4m_m8QQNuQ0FQZ9WQ==
+      - UPEjLwISEcd8DeTWYS1cWZrE9scZGSSfEEVbFMdwIA1FN9kqfzsFHQ==
       Age:
-      - '7068'
+      - '11016'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/hZkgoQYus5vegHoetLkCJzb17zJ.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
@@ -72,7 +72,7 @@ http_interactions:
         Film","origin_country":"DE"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
         Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.441,"vote_count":28224}'
-  recorded_at: Fri, 22 Mar 2024 15:46:50 GMT
+  recorded_at: Fri, 22 Mar 2024 16:52:38 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/550?language=en-US
@@ -121,15 +121,15 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 d5d585dce9ad5e702dfde5c38b8b4b9e.cloudfront.net (CloudFront)
+      - 1.1 ac5c3ac6e5d87e9394ed00e7554c9aee.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - ATL58-P2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - zdq2QY4gIrnnSSkl4JyYmWKtwmsjag-h-_uqEjghKoelAtNAIN9oxw==
+      - 1r0D13jmyb6rwDrGV2lPFKtoCle7z2frQzUN_mjFJsa0I9Cv-Bj-NA==
       Age:
-      - '7068'
+      - '11016'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/hZkgoQYus5vegHoetLkCJzb17zJ.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
@@ -145,7 +145,7 @@ http_interactions:
         Film","origin_country":"DE"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
         Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.441,"vote_count":28224}'
-  recorded_at: Fri, 22 Mar 2024 15:46:50 GMT
+  recorded_at: Fri, 22 Mar 2024 16:52:38 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/550?language=en-US
@@ -194,15 +194,15 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 7b72973d4641bd6bda77655d7cf0cc30.cloudfront.net (CloudFront)
+      - 1.1 717259fee28262d19eb04e26675df7a8.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - ATL58-P2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - W9if_3Xhs17FewsyMIBxO982WVzbE0lT8-uqulST5PJqXMv7NMO22g==
+      - _RnGYPAAsUdB_k6cwkbgxm3eXm0XYaqadSxyV9jCWO8-nsxv7oM4vg==
       Age:
-      - '7068'
+      - '11016'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/hZkgoQYus5vegHoetLkCJzb17zJ.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
@@ -218,7 +218,7 @@ http_interactions:
         Film","origin_country":"DE"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
         Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.441,"vote_count":28224}'
-  recorded_at: Fri, 22 Mar 2024 15:46:50 GMT
+  recorded_at: Fri, 22 Mar 2024 16:52:38 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/550?language=en-US
@@ -267,15 +267,15 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 52cf696b7d467b009c1bb9273fc4081c.cloudfront.net (CloudFront)
+      - 1.1 e529324611aee618447444dc1aa96308.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - ATL58-P2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - U5pa1EML34dRp14oJtyREjqCdmslY0GNKNOsDlxbbf31hcyowmA8kA==
+      - KSyCgjKVVXgE9Hv0n2f37nBA8DDCpig48GvfJ9pVHyDseMxFdq7Hvg==
       Age:
-      - '7069'
+      - '11016'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/hZkgoQYus5vegHoetLkCJzb17zJ.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
@@ -291,5 +291,5 @@ http_interactions:
         Film","origin_country":"DE"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
         Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.441,"vote_count":28224}'
-  recorded_at: Fri, 22 Mar 2024 15:46:51 GMT
+  recorded_at: Fri, 22 Mar 2024 16:52:38 GMT
 recorded_with: VCR 6.2.0

@@ -47,11 +47,14 @@ class ViewingPartyController < ApplicationController
    end
 
    def save_guests(params, viewing_party)
-      guests_emails = [params[:guest1], params[:guest2], params[:guest3]]
-      guests_emails.each do |guest|
-         if guest.present?
-            user = User.find_by(email: guest)
-            UserParty.create!(user_id: user.id, viewing_party_id: viewing_party, host: false)
+      guests = params[:viewing_party]
+      guests.delete(@user.id)
+      guests.each do |guest|
+         guest[1].each do |id|
+            if id.present?
+               user = User.find_by(id: id)
+               UserParty.create!(user_id: user.id, viewing_party_id: viewing_party, host: false)
+            end
          end
       end
    end
