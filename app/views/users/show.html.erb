@@ -23,6 +23,7 @@
             <li><%= attendee.name %> </li>
           <% end %>
         </ol>
+        <%= link_to "Viewing Party Show Page", user_movie_viewing_party_path(@user, movie_facade.movie_by_id.id, @invited_to_viewing_parties[index].id) %>
       </div><br>
     <% end %>  
   <% end %>
@@ -41,6 +42,7 @@
             <li><%= attendee.name %> </li>
           <% end %>
         </ol>
+        <%= link_to "Viewing Party Show Page", user_movie_viewing_party_path(@user, movie_facade.movie_by_id.id, @hosting_viewing_parties[index]) %>
       </div><br>
     <% end %>  
   <% end %>
