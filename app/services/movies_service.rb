@@ -21,4 +21,24 @@ class MoviesService
    def get_movies_by_title(title)
       get_url("https://api.themoviedb.org/3/search/movie?query=#{title}")
    end
+
+   def get_movie_by_id(id)
+      get_url("https://api.themoviedb.org/3/movie/#{id}?language=en-US")
+   end
+
+   def get_movie_cast_by_id(id)
+      get_url("https://api.themoviedb.org/3/movie/#{id}/credits?language=en-US")
+   end
+
+   def get_movie_reviews_by_id(id)
+      get_url("https://api.themoviedb.org/3/movie/#{id}/reviews?language=en-US&page=1")
+   end
+
+   def get_where_to_watch(id)
+      get_url("https://api.themoviedb.org/3/movie/#{id}/watch/providers")
+   end
+
+   def get_similar_movies(id)
+      get_url("https://api.themoviedb.org/3/movie/#{id}/recommendations?language=en-US&page=1")
+   end
 end

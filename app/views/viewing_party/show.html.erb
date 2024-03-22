@@ -1,0 +1,35 @@
+<h1>Viewing Party</h1>
+
+<h3>Movie: <%= @movie.title %></h3>
+<ul>
+   <li>Average Rating: <%= @facade.movie_by_id.avg_rating %></li><br>
+   <li>Total Reviews: <%= @facade.movie_by_id.review_count %></li><br>
+   <li>Runtime: <%= @facade.convert_min_to_hours(@facade.movie_by_id.runtime) %></li><br>
+   <li>Description: <%= @facade.movie_by_id.overview %></li><br>
+   <li>Genre:</li>
+   <ul>
+      <% @facade.movie_by_id.genre.each do |genre| %>
+         <li><%= genre[:name] %></li>
+      <% end %>
+   </ul><br>
+</ul>
+
+<h4>Where to buy:</h4>
+<div id="buy">
+   <% @watch[0].each do |buy| %>
+         <ul>
+            <li><img src="https://image.tmdb.org/t/p/original<%= buy[:logo_path] %>" alt="<%= buy[:provider_name] %>"><%= buy[:provider_name] %></li>
+         </ul>
+   <% end %>
+</div>
+
+<h4>Where to rent:</h4>
+<div id="rent">
+   <% @watch[1].each do |rent| %>
+         <ul>
+            <li><img src="https://image.tmdb.org/t/p/original<%= rent[:logo_path] %>" alt="<%= rent[:provider_name] %>"><%= rent[:provider_name] %></li>
+         </ul>
+   <% end %>
+</div>
+
+<p>Buy/Rent data provided by JustWatch</p>

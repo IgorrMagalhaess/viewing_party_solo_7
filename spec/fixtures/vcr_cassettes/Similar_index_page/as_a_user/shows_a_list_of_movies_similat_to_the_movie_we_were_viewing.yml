@@ -1,0 +1,211 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/550?language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <Authorization>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 21 Mar 2024 23:48:45 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=25166
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - b14ee249ca3563822abf363f294bb05f
+      X-Memc-Age:
+      - '2026'
+      X-Memc-Expires:
+      - '25166'
+      Etag:
+      - W/"90e8c23213bd3c278d84358cb579abab"
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 470159401e48708f2988d81a8aaf6824.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - ATL58-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - C3HjhSvfTAzSEYIipAYKblHgUaHpll-9rI8s5oQ4ryrMsmifnbp9iA==
+      Age:
+      - '1515'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/hZkgoQYus5vegHoetLkCJzb17zJ.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
+        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
+        channel primal male aggression into a shocking new form of therapy. Their
+        concept catches on, with underground \"fight clubs\" forming in every town,
+        until an eccentric gets in the way and ignites an out-of-control spiral toward
+        oblivion.","popularity":112.139,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
+        2000 Pictures","origin_country":"US"},{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
+        Enterprises","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
+        Linson Company","origin_country":"US"},{"id":25,"logo_path":"/qZCc1lty5FzX30aOCVRBLzaVmcp.png","name":"20th
+        Century Fox","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
+        Film","origin_country":"DE"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
+        States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
+        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.441,"vote_count":28221}'
+  recorded_at: Fri, 22 Mar 2024 00:14:00 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/550/recommendations?language=en-US&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <Authorization>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 21 Mar 2024 23:54:45 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=9258
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - '0607685894fe298cf0690e283e88898b'
+      X-Memc-Age:
+      - '19322'
+      X-Memc-Expires:
+      - '9258'
+      Etag:
+      - W/"52eeb3ae86a47467d1a246c640a94f3a"
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 44cd00d473b18d8a1a3bc8e9950913b8.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - ATL58-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - JvmtR1CRYmS8ax3xMFRHYOJhkAyNmyzE4LZBP2zKHhaA-CBd47hMfA==
+      Age:
+      - '1155'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJwYWdlIjoxLCJyZXN1bHRzIjpbeyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvc3VhRU90azFOMXNnZzJNVE03b1pkMmNmVnAzLmpwZyIsImlkIjo2ODAsInRpdGxlIjoiUHVscCBGaWN0aW9uIiwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiUHVscCBGaWN0aW9uIiwib3ZlcnZpZXciOiJBIGJ1cmdlci1sb3ZpbmcgaGl0IG1hbiwgaGlzIHBoaWxvc29waGljYWwgcGFydG5lciwgYSBkcnVnLWFkZGxlZCBnYW5nc3RlcidzIG1vbGwgYW5kIGEgd2FzaGVkLXVwIGJveGVyIGNvbnZlcmdlIGluIHRoaXMgc3ByYXdsaW5nLCBjb21lZGljIGNyaW1lIGNhcGVyLiBUaGVpciBhZHZlbnR1cmVzIHVuZnVybCBpbiB0aHJlZSBzdG9yaWVzIHRoYXQgaW5nZW5pb3VzbHkgdHJpcCBiYWNrIGFuZCBmb3J0aCBpbiB0aW1lLiIsInBvc3Rlcl9wYXRoIjoiL2Q1aUlsRm41czBJbXN6WXpCUGI4SlBJZmJYRC5qcGciLCJtZWRpYV90eXBlIjoibW92aWUiLCJnZW5yZV9pZHMiOls1Myw4MF0sInBvcHVsYXJpdHkiOjEyNC40NzcsInJlbGVhc2VfZGF0ZSI6IjE5OTQtMDktMTAiLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6OC40ODksInZvdGVfY291bnQiOjI2ODAxfSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6Ii9xZElNSGQ0c0VmSlNja2ZWSmZLUXZpc0wwMmEuanBnIiwiaWQiOjEzLCJ0aXRsZSI6IkZvcnJlc3QgR3VtcCIsIm9yaWdpbmFsX2xhbmd1YWdlIjoiZW4iLCJvcmlnaW5hbF90aXRsZSI6IkZvcnJlc3QgR3VtcCIsIm92ZXJ2aWV3IjoiQSBtYW4gd2l0aCBhIGxvdyBJUSBoYXMgYWNjb21wbGlzaGVkIGdyZWF0IHRoaW5ncyBpbiBoaXMgbGlmZSBhbmQgYmVlbiBwcmVzZW50IGR1cmluZyBzaWduaWZpY2FudCBoaXN0b3JpYyBldmVudHPigJRpbiBlYWNoIGNhc2UsIGZhciBleGNlZWRpbmcgd2hhdCBhbnlvbmUgaW1hZ2luZWQgaGUgY291bGQgZG8uIEJ1dCBkZXNwaXRlIGFsbCBoZSBoYXMgYWNoaWV2ZWQsIGhpcyBvbmUgdHJ1ZSBsb3ZlIGVsdWRlcyBoaW0uIiwicG9zdGVyX3BhdGgiOiIvYXJ3MnZjQnZlV09WWnI2cHhkOVhUZDFUZFFhLmpwZyIsIm1lZGlhX3R5cGUiOiJtb3ZpZSIsImdlbnJlX2lkcyI6WzM1LDE4LDEwNzQ5XSwicG9wdWxhcml0eSI6MTQyLjA3OSwicmVsZWFzZV9kYXRlIjoiMTk5NC0wNi0yMyIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo4LjQ3Niwidm90ZV9jb3VudCI6MjYzNDV9LHsiYWR1bHQiOmZhbHNlLCJiYWNrZHJvcF9wYXRoIjoiL2l3Z2w4emxycmZ2ZldwOWs5UGFqOGx2RkV2Uy5qcGciLCJpZCI6ODA3LCJ0aXRsZSI6IlNlN2VuIiwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiU2U3ZW4iLCJvdmVydmlldyI6IlR3byBob21pY2lkZSBkZXRlY3RpdmVzIGFyZSBvbiBhIGRlc3BlcmF0ZSBodW50IGZvciBhIHNlcmlhbCBraWxsZXIgd2hvc2UgY3JpbWVzIGFyZSBiYXNlZCBvbiB0aGUgXCJzZXZlbiBkZWFkbHkgc2luc1wiIGluIHRoaXMgZGFyayBhbmQgaGF1bnRpbmcgZmlsbSB0aGF0IHRha2VzIHZpZXdlcnMgZnJvbSB0aGUgdG9ydHVyZWQgcmVtYWlucyBvZiBvbmUgdmljdGltIHRvIHRoZSBuZXh0LiBUaGUgc2Vhc29uZWQgRGV0LiBTb21tZXJzZXQgcmVzZWFyY2hlcyBlYWNoIHNpbiBpbiBhbiBlZmZvcnQgdG8gZ2V0IGluc2lkZSB0aGUga2lsbGVyJ3MgbWluZCwgd2hpbGUgaGlzIG5vdmljZSBwYXJ0bmVyLCBNaWxscywgc2NvZmZzIGF0IGhpcyBlZmZvcnRzIHRvIHVucmF2ZWwgdGhlIGNhc2UuIiwicG9zdGVyX3BhdGgiOiIvNnlvZ2h0eVRwem5wQmlrOEVuZ0VtSnNrVlVPLmpwZyIsIm1lZGlhX3R5cGUiOiJtb3ZpZSIsImdlbnJlX2lkcyI6WzgwLDk2NDgsNTNdLCJwb3B1bGFyaXR5Ijo5OC4zNjcsInJlbGVhc2VfZGF0ZSI6IjE5OTUtMDktMjIiLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6OC4zNzIsInZvdGVfY291bnQiOjIwMTI2fSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6Ii84SzlxSGVNNkc2UWpRTjBDNVhLRkd2SzVsek0uanBnIiwiaWQiOjYwMywidGl0bGUiOiJUaGUgTWF0cml4Iiwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiVGhlIE1hdHJpeCIsIm92ZXJ2aWV3IjoiU2V0IGluIHRoZSAyMm5kIGNlbnR1cnksIFRoZSBNYXRyaXggdGVsbHMgdGhlIHN0b3J5IG9mIGEgY29tcHV0ZXIgaGFja2VyIHdobyBqb2lucyBhIGdyb3VwIG9mIHVuZGVyZ3JvdW5kIGluc3VyZ2VudHMgZmlnaHRpbmcgdGhlIHZhc3QgYW5kIHBvd2VyZnVsIGNvbXB1dGVycyB3aG8gbm93IHJ1bGUgdGhlIGVhcnRoLiIsInBvc3Rlcl9wYXRoIjoiL2Y4OVUzQURyMW9pQjFzOUdrZFBPRXBYVWs1SC5qcGciLCJtZWRpYV90eXBlIjoibW92aWUiLCJnZW5yZV9pZHMiOlsyOCw4NzhdLCJwb3B1bGFyaXR5Ijo5Mi4xNzEsInJlbGVhc2VfZGF0ZSI6IjE5OTktMDMtMzEiLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6OC4yMTMsInZvdGVfY291bnQiOjI0NjMwfSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6Ii9kcUs5SGFnMTA1NHRnaFJRU3FMU2Zya3ZRbkEuanBnIiwiaWQiOjE1NSwidGl0bGUiOiJUaGUgRGFyayBLbmlnaHQiLCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJUaGUgRGFyayBLbmlnaHQiLCJvdmVydmlldyI6IkJhdG1hbiByYWlzZXMgdGhlIHN0YWtlcyBpbiBoaXMgd2FyIG9uIGNyaW1lLiBXaXRoIHRoZSBoZWxwIG9mIEx0LiBKaW0gR29yZG9uIGFuZCBEaXN0cmljdCBBdHRvcm5leSBIYXJ2ZXkgRGVudCwgQmF0bWFuIHNldHMgb3V0IHRvIGRpc21hbnRsZSB0aGUgcmVtYWluaW5nIGNyaW1pbmFsIG9yZ2FuaXphdGlvbnMgdGhhdCBwbGFndWUgdGhlIHN0cmVldHMuIFRoZSBwYXJ0bmVyc2hpcCBwcm92ZXMgdG8gYmUgZWZmZWN0aXZlLCBidXQgdGhleSBzb29uIGZpbmQgdGhlbXNlbHZlcyBwcmV5IHRvIGEgcmVpZ24gb2YgY2hhb3MgdW5sZWFzaGVkIGJ5IGEgcmlzaW5nIGNyaW1pbmFsIG1hc3Rlcm1pbmQga25vd24gdG8gdGhlIHRlcnJpZmllZCBjaXRpemVucyBvZiBHb3RoYW0gYXMgdGhlIEpva2VyLiIsInBvc3Rlcl9wYXRoIjoiL3FKMnRXNldNVUR1eDkxMXI2bTdoYVJlZjBXSC5qcGciLCJtZWRpYV90eXBlIjoibW92aWUiLCJnZW5yZV9pZHMiOlsxOCwyOCw4MCw1M10sInBvcHVsYXJpdHkiOjExMC4wMTgsInJlbGVhc2VfZGF0ZSI6IjIwMDgtMDctMTYiLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6OC41MTQsInZvdGVfY291bnQiOjMxNjM0fSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6Ii84WlRWcXZLRFE4ZW1TR1VFTWpzUzR5SEF3cnAuanBnIiwiaWQiOjI3MjA1LCJ0aXRsZSI6IkluY2VwdGlvbiIsIm9yaWdpbmFsX2xhbmd1YWdlIjoiZW4iLCJvcmlnaW5hbF90aXRsZSI6IkluY2VwdGlvbiIsIm92ZXJ2aWV3IjoiQ29iYiwgYSBza2lsbGVkIHRoaWVmIHdobyBjb21taXRzIGNvcnBvcmF0ZSBlc3Bpb25hZ2UgYnkgaW5maWx0cmF0aW5nIHRoZSBzdWJjb25zY2lvdXMgb2YgaGlzIHRhcmdldHMgaXMgb2ZmZXJlZCBhIGNoYW5jZSB0byByZWdhaW4gaGlzIG9sZCBsaWZlIGFzIHBheW1lbnQgZm9yIGEgdGFzayBjb25zaWRlcmVkIHRvIGJlIGltcG9zc2libGU6IFwiaW5jZXB0aW9uXCIsIHRoZSBpbXBsYW50YXRpb24gb2YgYW5vdGhlciBwZXJzb24ncyBpZGVhIGludG8gYSB0YXJnZXQncyBzdWJjb25zY2lvdXMuIiwicG9zdGVyX3BhdGgiOiIvZWR2NUNadldqMDl1cE9zeTJZNkl3RGhLOGJ0LmpwZyIsIm1lZGlhX3R5cGUiOiJtb3ZpZSIsImdlbnJlX2lkcyI6WzI4LDg3OCwxMl0sInBvcHVsYXJpdHkiOjE0NC45OTcsInJlbGVhc2VfZGF0ZSI6IjIwMTAtMDctMTUiLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6OC4zNjcsInZvdGVfY291bnQiOjM1NDIzfSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6Ii9rWGZxY2RRS3NUb08wT1VYSGNyck5DSERCek8uanBnIiwiaWQiOjI3OCwidGl0bGUiOiJUaGUgU2hhd3NoYW5rIFJlZGVtcHRpb24iLCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJUaGUgU2hhd3NoYW5rIFJlZGVtcHRpb24iLCJvdmVydmlldyI6IkZyYW1lZCBpbiB0aGUgMTk0MHMgZm9yIHRoZSBkb3VibGUgbXVyZGVyIG9mIGhpcyB3aWZlIGFuZCBoZXIgbG92ZXIsIHVwc3RhbmRpbmcgYmFua2VyIEFuZHkgRHVmcmVzbmUgYmVnaW5zIGEgbmV3IGxpZmUgYXQgdGhlIFNoYXdzaGFuayBwcmlzb24sIHdoZXJlIGhlIHB1dHMgaGlzIGFjY291bnRpbmcgc2tpbGxzIHRvIHdvcmsgZm9yIGFuIGFtb3JhbCB3YXJkZW4uIER1cmluZyBoaXMgbG9uZyBzdHJldGNoIGluIHByaXNvbiwgRHVmcmVzbmUgY29tZXMgdG8gYmUgYWRtaXJlZCBieSB0aGUgb3RoZXIgaW5tYXRlcyAtLSBpbmNsdWRpbmcgYW4gb2xkZXIgcHJpc29uZXIgbmFtZWQgUmVkIC0tIGZvciBoaXMgaW50ZWdyaXR5IGFuZCB1bnF1ZW5jaGFibGUgc2Vuc2Ugb2YgaG9wZS4iLCJwb3N0ZXJfcGF0aCI6Ii85Y3FOeHgwR3hGMGJmbFptZVNNdUw1dG5HenIuanBnIiwibWVkaWFfdHlwZSI6Im1vdmllIiwiZ2VucmVfaWRzIjpbMTgsODBdLCJwb3B1bGFyaXR5IjoxMzcuMjc2LCJyZWxlYXNlX2RhdGUiOiIxOTk0LTA5LTIzIiwidmlkZW8iOmZhbHNlLCJ2b3RlX2F2ZXJhZ2UiOjguNzA0LCJ2b3RlX2NvdW50IjoyNTgxM30seyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvMnU3emJuOEV1ZEc2a0xsQnpVWXFQOFJ5RlU0LmpwZyIsImlkIjoxMjIsInRpdGxlIjoiVGhlIExvcmQgb2YgdGhlIFJpbmdzOiBUaGUgUmV0dXJuIG9mIHRoZSBLaW5nIiwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiVGhlIExvcmQgb2YgdGhlIFJpbmdzOiBUaGUgUmV0dXJuIG9mIHRoZSBLaW5nIiwib3ZlcnZpZXciOiJBcmFnb3JuIGlzIHJldmVhbGVkIGFzIHRoZSBoZWlyIHRvIHRoZSBhbmNpZW50IGtpbmdzIGFzIGhlLCBHYW5kYWxmIGFuZCB0aGUgb3RoZXIgbWVtYmVycyBvZiB0aGUgYnJva2VuIGZlbGxvd3NoaXAgc3RydWdnbGUgdG8gc2F2ZSBHb25kb3IgZnJvbSBTYXVyb24ncyBmb3JjZXMuIE1lYW53aGlsZSwgRnJvZG8gYW5kIFNhbSB0YWtlIHRoZSByaW5nIGNsb3NlciB0byB0aGUgaGVhcnQgb2YgTW9yZG9yLCB0aGUgZGFyayBsb3JkJ3MgcmVhbG0uIiwicG9zdGVyX3BhdGgiOiIvckN6cERHTGJPb1B3TGp5M09BbTVOVVBPVHJDLmpwZyIsIm1lZGlhX3R5cGUiOiJtb3ZpZSIsImdlbnJlX2lkcyI6WzEyLDE0LDI4XSwicG9wdWxhcml0eSI6MTE5Ljc1OSwicmVsZWFzZV9kYXRlIjoiMjAwMy0xMi0wMSIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo4LjQ3OCwidm90ZV9jb3VudCI6MjMxNzF9LHsiYWR1bHQiOmZhbHNlLCJiYWNrZHJvcF9wYXRoIjoiL3hKSG9rTWJsanZqQURZZGl0NWZLNVZRc1hFRy5qcGciLCJpZCI6MTU3MzM2LCJ0aXRsZSI6IkludGVyc3RlbGxhciIsIm9yaWdpbmFsX2xhbmd1YWdlIjoiZW4iLCJvcmlnaW5hbF90aXRsZSI6IkludGVyc3RlbGxhciIsIm92ZXJ2aWV3IjoiVGhlIGFkdmVudHVyZXMgb2YgYSBncm91cCBvZiBleHBsb3JlcnMgd2hvIG1ha2UgdXNlIG9mIGEgbmV3bHkgZGlzY292ZXJlZCB3b3JtaG9sZSB0byBzdXJwYXNzIHRoZSBsaW1pdGF0aW9ucyBvbiBodW1hbiBzcGFjZSB0cmF2ZWwgYW5kIGNvbnF1ZXIgdGhlIHZhc3QgZGlzdGFuY2VzIGludm9sdmVkIGluIGFuIGludGVyc3RlbGxhciB2b3lhZ2UuIiwicG9zdGVyX3BhdGgiOiIvZ0VVMlFuaUU2RTc3Tkk2bENVNk14bE5Cdkl4LmpwZyIsIm1lZGlhX3R5cGUiOiJtb3ZpZSIsImdlbnJlX2lkcyI6WzEyLDE4LDg3OF0sInBvcHVsYXJpdHkiOjE5Ny42MjgsInJlbGVhc2VfZGF0ZSI6IjIwMTQtMTEtMDUiLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6OC40Mywidm90ZV9jb3VudCI6MzM5MDd9LHsiYWR1bHQiOmZhbHNlLCJiYWNrZHJvcF9wYXRoIjoiLzhVaVpQMWRUSVBSWWtJY3dSODR6WlR3Z0twWi5qcGciLCJpZCI6NTk5NjcsInRpdGxlIjoiTG9vcGVyIiwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiTG9vcGVyIiwib3ZlcnZpZXciOiJJbiB0aGUgeWVhciAyMDQ0LCB0aW1lIHRyYXZlbCBoYXMgbm90IHlldCBiZWVuIGludmVudGVkIGJ1dCBpbiAzMCB5ZWFycyBpdCB3aWxsIGhhdmUgYmVlbi4gV2hlbiB0aGUgbW9iIHdhbnRzIHRvIGdldCByaWQgb2Ygc29tZW9uZSwgdGhleSB3aWxsIHNlbmQgdGhlaXIgdGFyZ2V0IGludG8gdGhlIHBhc3Qgd2hlcmUgYSBsb29wZXIsIGEgaGlyZWQgZ3VuLCBsaWtlIEpvZSBpcyB3YWl0aW5nIHRvIG1vcCB1cC4gSm9lIGlzIGdldHRpbmcgcmljaCBhbmQgbGlmZSBpcyBnb29kIHVudGlsIHRoZSBkYXkgdGhlIG1vYiBkZWNpZGVzIHRvIGNsb3NlIHRoZSBsb29wLCBzZW5kaW5nIGJhY2sgSm9lJ3MgZnV0dXJlIHNlbGYgZm9yIGFzc2Fzc2luYXRpb24uIiwicG9zdGVyX3BhdGgiOiIvc05qTDZTcUVyREJFOE9VWmxyRExrZXhmc0NqLmpwZyIsIm1lZGlhX3R5cGUiOiJtb3ZpZSIsImdlbnJlX2lkcyI6WzI4LDUzLDg3OF0sInBvcHVsYXJpdHkiOjY1LjkwMSwicmVsZWFzZV9kYXRlIjoiMjAxMi0wOS0yNiIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo2LjksInZvdGVfY291bnQiOjk4NDR9LHsiYWR1bHQiOmZhbHNlLCJiYWNrZHJvcF9wYXRoIjoiLzVMYm0wZ3BGRFJBUElWMUN0aDZsbjlpTDFvdS5qcGciLCJpZCI6Njg3MTgsInRpdGxlIjoiRGphbmdvIFVuY2hhaW5lZCIsIm9yaWdpbmFsX2xhbmd1YWdlIjoiZW4iLCJvcmlnaW5hbF90aXRsZSI6IkRqYW5nbyBVbmNoYWluZWQiLCJvdmVydmlldyI6IldpdGggdGhlIGhlbHAgb2YgYSBHZXJtYW4gYm91bnR5IGh1bnRlciwgYSBmcmVlZCBzbGF2ZSBzZXRzIG91dCB0byByZXNjdWUgaGlzIHdpZmUgZnJvbSBhIGJydXRhbCBNaXNzaXNzaXBwaSBwbGFudGF0aW9uIG93bmVyLiIsInBvc3Rlcl9wYXRoIjoiLzdvV1k4VkRXVzd0aFR6V2gzT0tZUmtXVWxENS5qcGciLCJtZWRpYV90eXBlIjoibW92aWUiLCJnZW5yZV9pZHMiOlsxOCwzN10sInBvcHVsYXJpdHkiOjg4LjI2MywicmVsZWFzZV9kYXRlIjoiMjAxMi0xMi0yNSIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo4LjE3Nywidm90ZV9jb3VudCI6MjUzNzJ9LHsiYWR1bHQiOmZhbHNlLCJiYWNrZHJvcF9wYXRoIjoiL3gyUlMzdVRjc0pKOUlmak5QY2dEbXVrb0VjUS5qcGciLCJpZCI6MTIwLCJ0aXRsZSI6IlRoZSBMb3JkIG9mIHRoZSBSaW5nczogVGhlIEZlbGxvd3NoaXAgb2YgdGhlIFJpbmciLCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJUaGUgTG9yZCBvZiB0aGUgUmluZ3M6IFRoZSBGZWxsb3dzaGlwIG9mIHRoZSBSaW5nIiwib3ZlcnZpZXciOiJZb3VuZyBob2JiaXQgRnJvZG8gQmFnZ2lucywgYWZ0ZXIgaW5oZXJpdGluZyBhIG15c3RlcmlvdXMgcmluZyBmcm9tIGhpcyB1bmNsZSBCaWxibywgbXVzdCBsZWF2ZSBoaXMgaG9tZSBpbiBvcmRlciB0byBrZWVwIGl0IGZyb20gZmFsbGluZyBpbnRvIHRoZSBoYW5kcyBvZiBpdHMgZXZpbCBjcmVhdG9yLiBBbG9uZyB0aGUgd2F5LCBhIGZlbGxvd3NoaXAgaXMgZm9ybWVkIHRvIHByb3RlY3QgdGhlIHJpbmdiZWFyZXIgYW5kIG1ha2Ugc3VyZSB0aGF0IHRoZSByaW5nIGFycml2ZXMgYXQgaXRzIGZpbmFsIGRlc3RpbmF0aW9uOiBNdC4gRG9vbSwgdGhlIG9ubHkgcGxhY2Ugd2hlcmUgaXQgY2FuIGJlIGRlc3Ryb3llZC4iLCJwb3N0ZXJfcGF0aCI6Ii82b29tNVFZUTJ5UVRNSklibnZia0JMOWNIbzYuanBnIiwibWVkaWFfdHlwZSI6Im1vdmllIiwiZ2VucmVfaWRzIjpbMTIsMTQsMjhdLCJwb3B1bGFyaXR5IjoxMjYuOTI0LCJyZWxlYXNlX2RhdGUiOiIyMDAxLTEyLTE4IiwidmlkZW8iOmZhbHNlLCJ2b3RlX2F2ZXJhZ2UiOjguNDExLCJ2b3RlX2NvdW50IjoyNDEwNH0seyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvYUpDdGt4TEx6a2sxcEVDZWhWaktIQTJsQmd3LmpwZyIsImlkIjoxODkxLCJ0aXRsZSI6IlRoZSBFbXBpcmUgU3RyaWtlcyBCYWNrIiwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiVGhlIEVtcGlyZSBTdHJpa2VzIEJhY2siLCJvdmVydmlldyI6IlRoZSBlcGljIHNhZ2EgY29udGludWVzIGFzIEx1a2UgU2t5d2Fsa2VyLCBpbiBob3BlcyBvZiBkZWZlYXRpbmcgdGhlIGV2aWwgR2FsYWN0aWMgRW1waXJlLCBsZWFybnMgdGhlIHdheXMgb2YgdGhlIEplZGkgZnJvbSBhZ2luZyBtYXN0ZXIgWW9kYS4gQnV0IERhcnRoIFZhZGVyIGlzIG1vcmUgZGV0ZXJtaW5lZCB0aGFuIGV2ZXIgdG8gY2FwdHVyZSBMdWtlLiBNZWFud2hpbGUsIHJlYmVsIGxlYWRlciBQcmluY2VzcyBMZWlhLCBjb2NreSBIYW4gU29sbywgQ2hld2JhY2NhLCBhbmQgZHJvaWRzIEMtM1BPIGFuZCBSMi1EMiBhcmUgdGhyb3duIGludG8gdmFyaW91cyBzdGFnZXMgb2YgY2FwdHVyZSwgYmV0cmF5YWwgYW5kIGRlc3BhaXIuIiwicG9zdGVyX3BhdGgiOiIvbk5BZVRtRjRDdGRTZ01EcGxYVERQT3BZenNYLmpwZyIsIm1lZGlhX3R5cGUiOiJtb3ZpZSIsImdlbnJlX2lkcyI6WzEyLDI4LDg3OF0sInBvcHVsYXJpdHkiOjQxLjUwOSwicmVsZWFzZV9kYXRlIjoiMTk4MC0wNS0yMCIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo4LjM5MSwidm90ZV9jb3VudCI6MTYyODV9LHsiYWR1bHQiOmZhbHNlLCJiYWNrZHJvcF9wYXRoIjoiLzlMU3NTUGJQNzE1WFQ5QjdhY0laemFudFB5WC5qcGciLCJpZCI6NzMsInRpdGxlIjoiQW1lcmljYW4gSGlzdG9yeSBYIiwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiQW1lcmljYW4gSGlzdG9yeSBYIiwib3ZlcnZpZXciOiJEZXJlayBWaW5leWFyZCBpcyBwYXJvbGVkIGFmdGVyIHNlcnZpbmcgMyB5ZWFycyBpbiBwcmlzb24gZm9yIGtpbGxpbmcgdHdvIEFmcmljYW4tQW1lcmljYW4gbWVuLiBUaHJvdWdoIGhpcyBicm90aGVyLCBEYW5ueSBWaW5leWFyZCdzIG5hcnJhdGlvbiwgd2UgbGVhcm4gdGhhdCBiZWZvcmUgZ29pbmcgdG8gcHJpc29uLCBEZXJlayB3YXMgYSBza2luaGVhZCBhbmQgdGhlIGxlYWRlciBvZiBhIHZpb2xlbnQgd2hpdGUgc3VwcmVtYWNpc3QgZ2FuZyB0aGF0IGNvbW1pdHRlZCBhY3RzIG9mIHJhY2lhbCBjcmltZSB0aHJvdWdob3V0IEwuQS4gYW5kIGhpcyBhY3Rpb25zIGdyZWF0bHkgaW5mbHVlbmNlZCBEYW5ueS4gUmVmb3JtZWQgYW5kIGZyZXNoIG91dCBvZiBwcmlzb24sIERlcmVrIHNldmVycyBjb250YWN0IHdpdGggdGhlIGdhbmcgYW5kIGJlY29tZXMgZGV0ZXJtaW5lZCB0byBrZWVwIERhbm55IGZyb20gZ29pbmcgZG93biB0aGUgc2FtZSB2aW9sZW50IHBhdGggYXMgaGUgZGlkLiIsInBvc3Rlcl9wYXRoIjoiL2V1eXBXa2FZRk9MVzNlNXJMSWNUQWpXbmhoVC5qcGciLCJtZWRpYV90eXBlIjoibW92aWUiLCJnZW5yZV9pZHMiOlsxOF0sInBvcHVsYXJpdHkiOjUzLjU2OCwicmVsZWFzZV9kYXRlIjoiMTk5OC0wNy0wMSIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo4LjM0Niwidm90ZV9jb3VudCI6MTExMDN9LHsiYWR1bHQiOmZhbHNlLCJiYWNrZHJvcF9wYXRoIjoiL2Vjdnkya014c0o2MGVqNTJiZVowRjhFT0drTC5qcGciLCJpZCI6MTEzMjQsInRpdGxlIjoiU2h1dHRlciBJc2xhbmQiLCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJTaHV0dGVyIElzbGFuZCIsIm92ZXJ2aWV3IjoiV29ybGQgV2FyIElJIHNvbGRpZXItdHVybmVkLVUuUy4gTWFyc2hhbCBUZWRkeSBEYW5pZWxzIGludmVzdGlnYXRlcyB0aGUgZGlzYXBwZWFyYW5jZSBvZiBhIHBhdGllbnQgZnJvbSBhIGhvc3BpdGFsIGZvciB0aGUgY3JpbWluYWxseSBpbnNhbmUsIGJ1dCBoaXMgZWZmb3J0cyBhcmUgY29tcHJvbWlzZWQgYnkgdHJvdWJsaW5nIHZpc2lvbnMgYW5kIGEgbXlzdGVyaW91cyBkb2N0b3IuIiwicG9zdGVyX3BhdGgiOiIvNEdEeTBQSFlYM1ZSWFV0d0s1eXNGYmcza0V4LmpwZyIsIm1lZGlhX3R5cGUiOiJtb3ZpZSIsImdlbnJlX2lkcyI6WzE4LDUzLDk2NDhdLCJwb3B1bGFyaXR5Ijo4NS4zOTcsInJlbGVhc2VfZGF0ZSI6IjIwMTAtMDItMTQiLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6OC4yMDEsInZvdGVfY291bnQiOjIzMDc1fSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6Ii9jeWVjQjdnb2RKNmtOSEdPTkZqVXlWTjlPWDUuanBnIiwiaWQiOjE3MjYsInRpdGxlIjoiSXJvbiBNYW4iLCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJJcm9uIE1hbiIsIm92ZXJ2aWV3IjoiQWZ0ZXIgYmVpbmcgaGVsZCBjYXB0aXZlIGluIGFuIEFmZ2hhbiBjYXZlLCBiaWxsaW9uYWlyZSBlbmdpbmVlciBUb255IFN0YXJrIGNyZWF0ZXMgYSB1bmlxdWUgd2VhcG9uaXplZCBzdWl0IG9mIGFybW9yIHRvIGZpZ2h0IGV2aWwuIiwicG9zdGVyX3BhdGgiOiIvNzhsUHR3djcyZVROcUZXOUNPQllJMGRXREphLmpwZyIsIm1lZGlhX3R5cGUiOiJtb3ZpZSIsImdlbnJlX2lkcyI6WzI4LDg3OCwxMl0sInBvcHVsYXJpdHkiOjExNS4wOCwicmVsZWFzZV9kYXRlIjoiMjAwOC0wNC0zMCIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjo3LjY0Miwidm90ZV9jb3VudCI6MjU1NDR9LHsiYWR1bHQiOmZhbHNlLCJiYWNrZHJvcF9wYXRoIjoiL29qZTlkMEVYUXlRY3hzcUhRb3I0eEZWR2pyZC5qcGciLCJpZCI6NTEwLCJ0aXRsZSI6Ik9uZSBGbGV3IE92ZXIgdGhlIEN1Y2tvbydzIE5lc3QiLCJvcmlnaW5hbF9sYW5ndWFnZSI6ImVuIiwib3JpZ2luYWxfdGl0bGUiOiJPbmUgRmxldyBPdmVyIHRoZSBDdWNrb28ncyBOZXN0Iiwib3ZlcnZpZXciOiJBIHBldHR5IGNyaW1pbmFsIGZha2VzIGluc2FuaXR5IHRvIHNlcnZlIGhpcyBzZW50ZW5jZSBpbiBhIG1lbnRhbCB3YXJkIHJhdGhlciB0aGFuIHByaXNvbi4gSGUgc29vbiBmaW5kcyBoaW1zZWxmIGFzIGEgbGVhZGVyIHRvIHRoZSBvdGhlciBwYXRpZW50c+KAlGFuZCBhbiBlbmVteSB0byB0aGUgY3J1ZWwsIGRvbWluZWVyaW5nIG51cnNlIHdobyBydW5zIHRoZSB3YXJkLiIsInBvc3Rlcl9wYXRoIjoiLzNqY2JEbVJGaVE4M2RyWE5PdlJEZUtIeFMwQy5qcGciLCJtZWRpYV90eXBlIjoibW92aWUiLCJnZW5yZV9pZHMiOlsxOF0sInBvcHVsYXJpdHkiOjUyLjcxLCJyZWxlYXNlX2RhdGUiOiIxOTc1LTExLTE5IiwidmlkZW8iOmZhbHNlLCJ2b3RlX2F2ZXJhZ2UiOjguNDIzLCJ2b3RlX2NvdW50IjoxMDAwMn0seyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvcUdRZjJPSElrb2g4OUs4WGVLUXpoeGN6Zjk2LmpwZyIsImlkIjozMjQ4NTcsInRpdGxlIjoiU3BpZGVyLU1hbjogSW50byB0aGUgU3BpZGVyLVZlcnNlIiwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiU3BpZGVyLU1hbjogSW50byB0aGUgU3BpZGVyLVZlcnNlIiwib3ZlcnZpZXciOiJTdHJ1Z2dsaW5nIHRvIGZpbmQgaGlzIHBsYWNlIGluIHRoZSB3b3JsZCB3aGlsZSBqdWdnbGluZyBzY2hvb2wgYW5kIGZhbWlseSwgQnJvb2tseW4gdGVlbmFnZXIgTWlsZXMgTW9yYWxlcyBpcyB1bmV4cGVjdGVkbHkgYml0dGVuIGJ5IGEgcmFkaW9hY3RpdmUgc3BpZGVyIGFuZCBkZXZlbG9wcyB1bmZhdGhvbWFibGUgcG93ZXJzIGp1c3QgbGlrZSB0aGUgb25lIGFuZCBvbmx5IFNwaWRlci1NYW4uIFdoaWxlIHdyZXN0bGluZyB3aXRoIHRoZSBpbXBsaWNhdGlvbnMgb2YgaGlzIG5ldyBhYmlsaXRpZXMsIE1pbGVzIGRpc2NvdmVycyBhIHN1cGVyIGNvbGxpZGVyIGNyZWF0ZWQgYnkgdGhlIG1hZG1hbiBXaWxzb24gXCJLaW5ncGluXCIgRmlzaywgY2F1c2luZyBvdGhlcnMgZnJvbSBhY3Jvc3MgdGhlIFNwaWRlci1WZXJzZSB0byBiZSBpbmFkdmVydGVudGx5IHRyYW5zcG9ydGVkIHRvIGhpcyBkaW1lbnNpb24uIiwicG9zdGVyX3BhdGgiOiIvaWlaWmRvUUJFWUJ2NmlkOHN1N0ltTDBvQ2JELmpwZyIsIm1lZGlhX3R5cGUiOiJtb3ZpZSIsImdlbnJlX2lkcyI6WzE2LDI4LDEyLDg3OF0sInBvcHVsYXJpdHkiOjExNS41ODYsInJlbGVhc2VfZGF0ZSI6IjIwMTgtMTItMDYiLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6OC40MDUsInZvdGVfY291bnQiOjE0ODExfSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6Ii9oZzBNVElGczQ5ZWYxNzlDOVkxSFJ0enFiYksuanBnIiwiaWQiOjE2ODY5LCJ0aXRsZSI6IkluZ2xvdXJpb3VzIEJhc3RlcmRzIiwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiSW5nbG91cmlvdXMgQmFzdGVyZHMiLCJvdmVydmlldyI6IkluIE5hemktb2NjdXBpZWQgRnJhbmNlIGR1cmluZyBXb3JsZCBXYXIgSUksIGEgZ3JvdXAgb2YgSmV3aXNoLUFtZXJpY2FuIHNvbGRpZXJzIGtub3duIGFzIFwiVGhlIEJhc3RlcmRzXCIgYXJlIGNob3NlbiBzcGVjaWZpY2FsbHkgdG8gc3ByZWFkIGZlYXIgdGhyb3VnaG91dCB0aGUgVGhpcmQgUmVpY2ggYnkgc2NhbHBpbmcgYW5kIGJydXRhbGx5IGtpbGxpbmcgTmF6aXMuIFRoZSBCYXN0ZXJkcywgbGVhZCBieSBMdC4gQWxkbyBSYWluZSBzb29uIGNyb3NzIHBhdGhzIHdpdGggYSBGcmVuY2gtSmV3aXNoIHRlZW5hZ2UgZ2lybCB3aG8gcnVucyBhIG1vdmllIHRoZWF0ZXIgaW4gUGFyaXMgd2hpY2ggaXMgdGFyZ2V0ZWQgYnkgdGhlIHNvbGRpZXJzLiIsInBvc3Rlcl9wYXRoIjoiLzdzZmJFbmFBUlhERGhLbTBDWjdEN3VjMnNiby5qcGciLCJtZWRpYV90eXBlIjoibW92aWUiLCJnZW5yZV9pZHMiOlsxOCw1MywxMDc1Ml0sInBvcHVsYXJpdHkiOjEzMS40MDksInJlbGVhc2VfZGF0ZSI6IjIwMDktMDgtMDIiLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6OC4yMTgsInZvdGVfY291bnQiOjIxNDM2fSx7ImFkdWx0IjpmYWxzZSwiYmFja2Ryb3BfcGF0aCI6Ii92VVRWVWRmYnNZNERlUENZenh4RE1YS3A2djYuanBnIiwiaWQiOjU4NSwidGl0bGUiOiJNb25zdGVycywgSW5jLiIsIm9yaWdpbmFsX2xhbmd1YWdlIjoiZW4iLCJvcmlnaW5hbF90aXRsZSI6Ik1vbnN0ZXJzLCBJbmMuIiwib3ZlcnZpZXciOiJMb3ZhYmxlIFN1bGxleSBhbmQgaGlzIHdpc2VjcmFja2luZyBzaWRla2ljayBNaWtlIFdhem93c2tpIGFyZSB0aGUgdG9wIHNjYXJlIHRlYW0gYXQgTW9uc3RlcnMsIEluYy4sIHRoZSBzY3JlYW0tcHJvY2Vzc2luZyBmYWN0b3J5IGluIE1vbnN0cm9wb2xpcy4gV2hlbiBhIGxpdHRsZSBnaXJsIG5hbWVkIEJvbyB3YW5kZXJzIGludG8gdGhlaXIgd29ybGQsIGl0J3MgdGhlIG1vbnN0ZXJzIHdobyBhcmUgc2NhcmVkIHNpbGx5LCBhbmQgaXQncyB1cCB0byBTdWxsZXkgYW5kIE1pa2UgdG8ga2VlcCBoZXIgb3V0IG9mIHNpZ2h0IGFuZCBnZXQgaGVyIGJhY2sgaG9tZS4iLCJwb3N0ZXJfcGF0aCI6Ii93RlNweU1zcDdIMHR0RVJieFk3VHJsdjh4cnkuanBnIiwibWVkaWFfdHlwZSI6Im1vdmllIiwiZ2VucmVfaWRzIjpbMTYsMzUsMTA3NTFdLCJwb3B1bGFyaXR5IjoxNDcuODQxLCJyZWxlYXNlX2RhdGUiOiIyMDAxLTExLTAxIiwidmlkZW8iOmZhbHNlLCJ2b3RlX2F2ZXJhZ2UiOjcuODQzLCJ2b3RlX2NvdW50IjoxNzc0MX0seyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvN1M3UEUzdks5RWg1dXpDWUJER2s1cVRKZVlXLmpwZyIsImlkIjo2MjksInRpdGxlIjoiVGhlIFVzdWFsIFN1c3BlY3RzIiwib3JpZ2luYWxfbGFuZ3VhZ2UiOiJlbiIsIm9yaWdpbmFsX3RpdGxlIjoiVGhlIFVzdWFsIFN1c3BlY3RzIiwib3ZlcnZpZXciOiJIZWxkIGluIGFuIEwuQS4gaW50ZXJyb2dhdGlvbiByb29tLCBWZXJiYWwgS2ludCBhdHRlbXB0cyB0byBjb252aW5jZSB0aGUgZmVkcyB0aGF0IGEgbXl0aGljIGNyaW1lIGxvcmQsIEtleXNlciBTb3plLCBub3Qgb25seSBleGlzdHMsIGJ1dCB3YXMgYWxzbyByZXNwb25zaWJsZSBmb3IgZHJhd2luZyBoaW0gYW5kIGhpcyBmb3VyIHBhcnRuZXJzIGludG8gYSBtdWx0aS1taWxsaW9uIGRvbGxhciBoZWlzdCB0aGF0IGVuZGVkIHdpdGggYW4gZXhwbG9zaW9uIGluIFNhbiBQZWRybyBoYXJib3Ig4oCTIGxlYXZpbmcgZmV3IHN1cnZpdm9ycy4gVmVyYmFsIGx1cmVzIGhpcyBpbnRlcnJvZ2F0b3JzIHdpdGggYW4gaW5jcmVkaWJsZSBzdG9yeSBvZiB0aGUgY3JpbWUgbG9yZCdzIGFsbW9zdCBzdXBlcm5hdHVyYWwgcHJvd2Vzcy4iLCJwb3N0ZXJfcGF0aCI6Ii9yV2JzeGR3RjlxUXpwVFBDTG1EZlZuVnFUSzEuanBnIiwibWVkaWFfdHlwZSI6Im1vdmllIiwiZ2VucmVfaWRzIjpbMTgsODAsNTNdLCJwb3B1bGFyaXR5IjozOC43NjgsInJlbGVhc2VfZGF0ZSI6IjE5OTUtMDctMTkiLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6OC4xODcsInZvdGVfY291bnQiOjk5NDJ9XSwidG90YWxfcGFnZXMiOjIsInRvdGFsX3Jlc3VsdHMiOjQwfQ==
+  recorded_at: Fri, 22 Mar 2024 00:14:00 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/550?language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <Authorization>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 21 Mar 2024 23:48:45 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=25166
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - b14ee249ca3563822abf363f294bb05f
+      X-Memc-Age:
+      - '2026'
+      X-Memc-Expires:
+      - '25166'
+      Etag:
+      - W/"90e8c23213bd3c278d84358cb579abab"
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 e5aa3080cea9dc9a9b76e1a6140c88b6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - ATL58-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - ysVMji2aSguy_xKFkLPzhku5neILCZLqvwSKM5nV4e8hQ1zOxRXE7Q==
+      Age:
+      - '1515'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/hZkgoQYus5vegHoetLkCJzb17zJ.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
+        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
+        channel primal male aggression into a shocking new form of therapy. Their
+        concept catches on, with underground \"fight clubs\" forming in every town,
+        until an eccentric gets in the way and ignites an out-of-control spiral toward
+        oblivion.","popularity":112.139,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
+        2000 Pictures","origin_country":"US"},{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
+        Enterprises","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
+        Linson Company","origin_country":"US"},{"id":25,"logo_path":"/qZCc1lty5FzX30aOCVRBLzaVmcp.png","name":"20th
+        Century Fox","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
+        Film","origin_country":"DE"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
+        States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
+        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.441,"vote_count":28221}'
+  recorded_at: Fri, 22 Mar 2024 00:14:00 GMT
+recorded_with: VCR 6.2.0
