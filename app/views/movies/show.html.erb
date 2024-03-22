@@ -1,18 +1,18 @@
 
-<%= button_to "Create a viewing party", new_user_movie_viewing_party_path(@user, @facade.movie_by_id.id), method: :get %>
+<%= button_to "Create a viewing party", new_user_movie_viewing_party_path(@user, @movie.id), method: :get %>
 <%= button_to "Return to Discover Page", user_discover_index_path(@user), method: :get %>
-<%= button_to "Get Similar Movies", user_movie_similar_index_path(@user, @facade.movie_by_id.id), method: :get %> 
+<%= button_to "Get Similar Movies", user_movie_similar_index_path(@user, @movie.id), method: :get %> 
 
-<h1><%= @facade.movie_by_id.title %> Details</h1>
+<h1><%= @movie.title %> Details</h1>
 
 <ul>
-   <li>Average Rating: <%= @facade.movie_by_id.avg_rating %></li><br>
-   <li>Total Reviews: <%= @facade.movie_by_id.review_count %></li>
-   <li>Runtime: <%= @facade.convert_min_to_hours(@facade.movie_by_id.runtime) %></li><br>
-   <li>Description: <%= @facade.movie_by_id.overview %></li>
+   <li>Average Rating: <%= @movie.avg_rating %></li><br>
+   <li>Total Reviews: <%= @movie.review_count %></li>
+   <li>Runtime: <%= @facade.convert_min_to_hours(@movie.runtime) %></li><br>
+   <li>Description: <%= @movie.overview %></li>
    <li>Genre:</li>
    <ul>
-      <% @facade.movie_by_id.genre.each do |genre| %>
+      <% @movie.genre.each do |genre| %>
          <li><%= genre[:name] %></li>
       <% end %>
    </ul><br>
