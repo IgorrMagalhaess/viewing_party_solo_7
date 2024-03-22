@@ -1,6 +1,7 @@
 
 <%= button_to "Create a viewing party", new_user_movie_viewing_party_path(@user, @facade.movie_by_id.id), method: :get %>
 <%= button_to "Return to Discover Page", user_discover_index_path(@user), method: :get %>
+<%= button_to "Get Similar Movies", user_movie_similar_index_path(@user, @facade.movie_by_id.id), method: :get %> 
 
 <h1><%= @facade.movie_by_id.title %> Details</h1>
 

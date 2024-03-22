@@ -63,4 +63,13 @@ class MoviesFacade
 
       @watch = [buy, rent]
    end
+
+   def similar_movies
+      service = MoviesService.new
+      similar_movies_json = service.get_similar_movies(@params)
+
+      @movies = similar_movies_json[:results].map do |movie_data|
+         Movie.new(movie_data)
+      end
+   end
 end

@@ -1,0 +1,14 @@
+
+<h1>Movies similar to <%= @movie.title %></h1>
+
+<% @similar_movies.each do |movie| %>
+   <img src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>" alt="Pulp Fiction Poster">
+   <ul>
+      <h3><%= movie.title %></h3>
+      <li>Average Rating: <%= movie.avg_rating %></li>
+      <li>Total Reviews: <%= movie.review_count %></li>
+      <li>Description: <%= movie.overview %></li>
+      <li>Release Date: <%= movie.release_date %></li>
+   </ul>
+   <p>_</p>
+<% end %>

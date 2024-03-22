@@ -25,7 +25,7 @@ RSpec.describe 'Viweing Party Show Page', type: :feature do
             expect(page).to have_content("Microsoft Store")
             expect(page).to have_content("AMC on Demand")
          end
-         save_and_open_page
+
          expect(page).to have_content("Where to rent:")
          within '#rent' do
             expect(page).to have_content("Apple TV")

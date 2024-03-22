@@ -54,9 +54,9 @@ http_interactions:
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - 6sY-oJM6679ZcGp_lSDUHUl9E4hPH6wiUq3ekl7OPMj0Tz9XP2GwOQ==
+      - 5Didbj8xp2-Xm-gXd4wKkbBqpvKuACFbUiuNXGjxc9rmePjeFqWakQ==
       Age:
-      - '8141'
+      - '17592'
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg","genre_ids":[18,80],"id":278,"original_language":"en","original_title":"The
@@ -77,5 +77,5 @@ http_interactions:
         Springs Eternal: A Look Back at The Shawshank Redemption","overview":"Documentary
         about the movie.","popularity":1.4,"poster_path":"/v4wcS8XwUn5zl57rYRMzMnKahmt.jpg","release_date":"2004-06-25","title":"Hope
         Springs Eternal: A Look Back at The Shawshank Redemption","video":false,"vote_average":7.4,"vote_count":5}],"total_pages":1,"total_results":3}'
-  recorded_at: Thu, 21 Mar 2024 21:36:22 GMT
+  recorded_at: Fri, 22 Mar 2024 00:13:53 GMT
 recorded_with: VCR 6.2.0

@@ -27,36 +27,36 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Thu, 21 Mar 2024 17:28:32 GMT
+      - Thu, 21 Mar 2024 23:48:45 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=21398
+      - public, max-age=25166
       X-Memc:
       - HIT
       X-Memc-Key:
       - b14ee249ca3563822abf363f294bb05f
       X-Memc-Age:
-      - '3020'
+      - '2026'
       X-Memc-Expires:
-      - '21398'
+      - '25166'
       Etag:
-      - W/"165072c5c85c9cb3c5b8676fb8915f29"
+      - W/"90e8c23213bd3c278d84358cb579abab"
       Vary:
       - Accept-Encoding
       - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 52cf696b7d467b009c1bb9273fc4081c.cloudfront.net (CloudFront)
+      - 1.1 3a20a3ce17ba40a6526ea3bc41b61ea8.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - ATL58-P2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - dWVB7DjLCrBxDqa3arqVRCvbc93fiFqVmGDoXnyro9xpXcyxkRBrIg==
+      - yqGSxHppaXnZvyoizTfKF3GxwFhF02p5DvS57BXU-yYuA_VXKwi3kw==
       Age:
-      - '14875'
+      - '1515'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/hZkgoQYus5vegHoetLkCJzb17zJ.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
@@ -71,6 +71,6 @@ http_interactions:
         Century Fox","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
         Film","origin_country":"DE"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
-        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.441,"vote_count":28215}'
-  recorded_at: Thu, 21 Mar 2024 21:36:27 GMT
+        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.441,"vote_count":28221}'
+  recorded_at: Fri, 22 Mar 2024 00:14:00 GMT
 recorded_with: VCR 6.2.0

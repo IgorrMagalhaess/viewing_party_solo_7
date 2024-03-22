@@ -37,4 +37,8 @@ class MoviesService
    def get_where_to_watch(id)
       get_url("https://api.themoviedb.org/3/movie/#{id}/watch/providers")
    end
+
+   def get_similar_movies(id)
+      get_url("https://api.themoviedb.org/3/movie/#{id}/recommendations?language=en-US&page=1")
+   end
 end

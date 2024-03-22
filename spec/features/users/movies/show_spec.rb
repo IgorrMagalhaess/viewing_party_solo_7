@@ -27,7 +27,7 @@ RSpec.describe "Movie Detail Page", type: :feature do
          expect(page).to have_content("Runtime: 2 hours, 19 minutes")
          expect(page).to have_content("Drama")
          expect(page).to have_content("Description")
-         expect(page).to have_content("Total Reviews: 28215")
+         expect(page).to have_content("Total Reviews: 28221")
       end
 
       it "shoud show the cast of the movie", :vcr do
@@ -50,6 +50,12 @@ RSpec.describe "Movie Detail Page", type: :feature do
          expect(page).to have_content("Review: In my top 5 of all time favourite movies. Great story line and a movie you can watch over and over again.")
       end
 
-      it ''
+      it 'has a link to get similar movies', :vcr do
+         expect(page).to have_button("Get Similar Movies")
+
+         click_button "Get Similar Movies"
+
+         expect(current_path).to eq(user_movie_similar_index_path(@user1, 550))
+      end
    end
 end
