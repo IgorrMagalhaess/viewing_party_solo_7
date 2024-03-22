@@ -8,9 +8,14 @@
    <%= f.date_select :date %><br /><br/>
    <%= f.label :start_time, "Start Time:" %>
    <%= f.time_select :start_time %><br /><br/>
-   <%= f.label :guests, "Guests:" %><br />
-   <%= f.text_field :guest1 %><br/>
-   <%= f.text_field :guest2 %><br/>
-   <%= f.text_field :guest3 %><br /><br/>
+   <fieldset>
+      <legend>Guests:</legend>
+      <% User.all.each do |guest| %>
+         <div>
+            <%= check_box_tag 'viewing_party[user_ids][]', guest.id %>
+            <%= label_tag "viewing_party[user_ids][]", guest.name %>
+         </div>
+      <% end %>
+   </fieldset>
    <%= f.submit "Create Viewing Party" %>
 <% end %>

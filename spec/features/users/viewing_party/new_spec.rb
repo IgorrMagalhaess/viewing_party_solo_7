@@ -33,9 +33,11 @@ RSpec.describe "New Viewing Party Page", type: :feature do
 
       it 'should have an option to select guests', :vcr do
          expect(page).to have_content("Guests:")
-         expect(page).to have_field(:guest1)
-         expect(page).to have_field(:guest2)
-         expect(page).to have_field(:guest3)
+
+         User.all.each do |guest|
+            checkbox = find("input[type='checkbox'][value='#{guest.id}']")
+            expect(checkbox).to be_visible
+         end
       end
 
       it 'Should not create a viewing party if the duration is smaller than the movie runtime', :vcr do
@@ -47,8 +49,7 @@ RSpec.describe "New Viewing Party Page", type: :feature do
          select "20", from: "_start_time_4i"
          select "00", from: "_start_time_5i"
 
-         fill_in :guest1, with: "magalhaess.igor@gmail.com"
-         fill_in :guest2, with: "sam@email.com"
+         first('input[type="checkbox"]').check
 
          click_button "Create Viewing Party"
 
@@ -65,8 +66,7 @@ RSpec.describe "New Viewing Party Page", type: :feature do
          select "20", from: "_start_time_4i"
          select "00", from: "_start_time_5i"
 
-         fill_in :guest1, with: "magalhaess.igor@gmail.com"
-         fill_in :guest2, with: "sam@email.com"
+         first('input[type="checkbox"]').check
 
          click_button "Create Viewing Party"
 
