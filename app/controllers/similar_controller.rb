@@ -1,5 +1,5 @@
 class SimilarController < ApplicationController
-   before_action :set_movie, only: [:index]
+   before_action :set_movie_and_user, only: [:index]
 
    def index
       @facade = MoviesFacade.new(params[:movie_id])
@@ -8,7 +8,8 @@ class SimilarController < ApplicationController
 
    private
 
-   def set_movie
+   def set_movie_and_user
+      @user = User.find(params[:user_id])
       facade = MoviesFacade.new(params[:movie_id])
       @movie = facade.movie_by_id
    end

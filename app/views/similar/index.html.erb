@@ -4,7 +4,7 @@
 <% @similar_movies.each do |movie| %>
    <img src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>" alt="Pulp Fiction Poster">
    <ul>
-      <h3><%= movie.title %></h3>
+      <h3><%= link_to movie.title, user_movie_path(@user, movie.id) %></h3>
       <li>Average Rating: <%= movie.avg_rating %></li>
       <li>Total Reviews: <%= movie.review_count %></li>
       <li>Description: <%= movie.overview %></li>

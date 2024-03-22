@@ -37,7 +37,7 @@ class ViewingPartyController < ApplicationController
          date: build_date(params),
          start_time: build_start_time(params),
       }.merge(
-         params.permit(:duration, :date, :start_time)
+         params.permit(:duration, :date, :start_time, :movie_id)
       )
    end
 
