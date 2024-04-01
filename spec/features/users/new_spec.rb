@@ -34,7 +34,7 @@ RSpec.describe 'Create New User', type: :feature do
       new_user = User.last
 
       expect(current_path).to eq(user_path(new_user))
-      expect(page).to have_content('Successfully Created New User')
+      expect(page).to have_content('Welcome, Chris')
     end
 
     it 'when they fill in form with information, email (non-unique), submit, redirects to user show page' do

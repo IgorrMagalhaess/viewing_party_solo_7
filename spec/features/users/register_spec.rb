@@ -12,14 +12,13 @@ RSpec.describe 'Register User', type: :feature do
 
          name = "Igor Magalhaes"
          email = "magalhaess.igor@gmail.com"
-         password = "testpassword"
+         password = 
 
-         fill_in :name, with: name
-         fill_in :email, with: email
-         fill_in :password, with: password
-
-         click_on "Register"
-
+         fill_in "user[name]", with: name
+         fill_in "user[email]", with: email
+         fill_in "user[password]", with: "testpassword"
+         click_on "Create New User"
+         
          expect(page).to have_content("Welcome, #{name}")
       end
    end
