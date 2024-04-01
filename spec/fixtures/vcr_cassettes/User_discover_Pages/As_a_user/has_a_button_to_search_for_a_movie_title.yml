@@ -27,34 +27,34 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Fri, 22 Mar 2024 16:52:35 GMT
+      - Mon, 01 Apr 2024 15:09:08 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=27605
+      - public, max-age=7125
       X-Memc:
       - HIT
       X-Memc-Key:
       - 759d9067879b7b45cf8ef817f6a87cd2
       X-Memc-Age:
-      - '850'
+      - '21098'
       X-Memc-Expires:
-      - '27605'
+      - '7125'
       Etag:
-      - W/"86d04363532cdce0a889bd7d62afd180"
+      - W/"b3065b096e697dbfeb1ef54eee3226aa"
       Vary:
       - Accept-Encoding
       - Origin
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 fea48d36741a5a8b0c278e8b50136aba.cloudfront.net (CloudFront)
+      - 1.1 842903c2217128ae7cb417c6c6651412.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - ATL58-P2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - GQn-7FMGrV-DjqgmoeTWKLiludrY5GV8niQabbW-YR59neTfM_Na3w==
+      - 6jvT9NoaOyYqZHxPwq-1bOBQEMzPu7RSigyWs2bZoLAkr3gAibkwNA==
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg","genre_ids":[18,80],"id":278,"original_language":"en","original_title":"The
@@ -63,17 +63,17 @@ http_interactions:
         at the Shawshank prison, where he puts his accounting skills to work for an
         amoral warden. During his long stretch in prison, Dufresne comes to be admired
         by the other inmates -- including an older prisoner named Red -- for his integrity
-        and unquenchable sense of hope.","popularity":126.841,"poster_path":"/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg","release_date":"1994-09-23","title":"The
-        Shawshank Redemption","video":false,"vote_average":8.705,"vote_count":25819},{"adult":false,"backdrop_path":"/u6hgtSIzW8nDKKWmun9JDhZz2fp.jpg","genre_ids":[99],"id":546312,"original_language":"en","original_title":"Shawshank:
+        and unquenchable sense of hope.","popularity":156.165,"poster_path":"/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg","release_date":"1994-09-23","title":"The
+        Shawshank Redemption","video":false,"vote_average":8.706,"vote_count":25878},{"adult":false,"backdrop_path":"/u6hgtSIzW8nDKKWmun9JDhZz2fp.jpg","genre_ids":[99],"id":546312,"original_language":"en","original_title":"Shawshank:
         The Redeeming Feature","overview":"Film critic and presenter Mark Kermode
         explores the fascination and praise audiences, fans and critics have behind
         the classic The Shawshank Redemption (1994) and how its importance grew higher
         over the years despite being an overlooked film when it was released and not
         getting any Oscars victories when it was nominated as one of the Best Pictures
-        of the Year.","popularity":3.225,"poster_path":"/b7DGM74MRfiLqEveVKwh0jnQ8zX.jpg","release_date":"2001-09-08","title":"Shawshank:
-        The Redeeming Feature","video":false,"vote_average":8.533,"vote_count":15},{"adult":false,"backdrop_path":null,"genre_ids":[],"id":897459,"original_language":"en","original_title":"Hope
+        of the Year.","popularity":2.125,"poster_path":"/b7DGM74MRfiLqEveVKwh0jnQ8zX.jpg","release_date":"2001-09-08","title":"Shawshank:
+        The Redeeming Feature","video":false,"vote_average":8.567,"vote_count":15},{"adult":false,"backdrop_path":null,"genre_ids":[],"id":897459,"original_language":"en","original_title":"Hope
         Springs Eternal: A Look Back at The Shawshank Redemption","overview":"Documentary
-        about the movie.","popularity":1.861,"poster_path":"/v4wcS8XwUn5zl57rYRMzMnKahmt.jpg","release_date":"2004-06-25","title":"Hope
+        about the movie.","popularity":2.744,"poster_path":"/v4wcS8XwUn5zl57rYRMzMnKahmt.jpg","release_date":"2004-06-25","title":"Hope
         Springs Eternal: A Look Back at The Shawshank Redemption","video":false,"vote_average":7.4,"vote_count":5}],"total_pages":1,"total_results":3}'
-  recorded_at: Fri, 22 Mar 2024 16:52:35 GMT
+  recorded_at: Mon, 01 Apr 2024 15:09:08 GMT
 recorded_with: VCR 6.2.0
