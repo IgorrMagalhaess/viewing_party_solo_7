@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe 'Create New User', type: :feature do
   describe 'When user visits "/register"' do
     before(:each) do
-      @user = User.create!(name: 'Tommy', email: 'tommy@email.com', password: 'password')
-      @user = User.create!(name: 'Sam', email: 'sam@email.com', password: 'password')
+      @user = User.create!(name: 'Tommy', email: 'tommy@email.com', password: 'password', password_confirmation: 'password')
+      @user = User.create!(name: 'Sam', email: 'sam@email.com', password: 'password', password_confirmation: 'password')
 
       visit register_user_path
     end
@@ -28,6 +28,7 @@ RSpec.describe 'Create New User', type: :feature do
       fill_in "user[name]", with: 'Chris'
       fill_in "user[email]", with: 'chris@email.com'
       fill_in "user[password]", with: 'password'
+      fill_in "user[password_confirmation]", with: 'password'
 
       click_button 'Create New User'
     
@@ -40,6 +41,8 @@ RSpec.describe 'Create New User', type: :feature do
     it 'when they fill in form with information, email (non-unique), submit, redirects to user show page' do
       fill_in "user[name]", with: 'Tommy'
       fill_in "user[email]", with: 'tommy@email.com'
+      fill_in "user[password]", with: 'password'
+      fill_in "user[password_confirmation]", with: 'password'
 
       click_button 'Create New User'
 
@@ -50,6 +53,9 @@ RSpec.describe 'Create New User', type: :feature do
     it 'when they fill in form with missing information' do
       fill_in "user[name]", with: ""
       fill_in "user[email]", with: ""
+      fill_in "user[password]", with: 'password'
+      fill_in "user[password_confirmation]", with: 'password'
+
       click_button 'Create New User'
 
       expect(current_path).to eq(register_user_path)
@@ -59,6 +65,8 @@ RSpec.describe 'Create New User', type: :feature do
     it 'They fill in form with invalid email format (only somethng@something.something)' do 
       fill_in "user[name]", with: "Sam"
       fill_in "user[email]", with: "sam sam@email.co.uk"
+      fill_in "user[password]", with: 'password'
+      fill_in "user[password_confirmation]", with: 'password'
 
       click_button 'Create New User'
 
@@ -67,6 +75,8 @@ RSpec.describe 'Create New User', type: :feature do
 
       fill_in "user[name]", with: "Sammy"
       fill_in "user[email]", with: "sam@email..com"
+      fill_in "user[password]", with: 'password'
+      fill_in "user[password_confirmation]", with: 'password'
       click_button 'Create New User'
 
       expect(current_path).to eq(register_user_path)
@@ -74,6 +84,8 @@ RSpec.describe 'Create New User', type: :feature do
 
       fill_in "user[name]", with: "Sammy"
       fill_in "user[email]", with: "sam@emailcom."
+      fill_in "user[password]", with: 'password'
+      fill_in "user[password_confirmation]", with: 'password'
       click_button 'Create New User'
 
       expect(current_path).to eq(register_user_path)
@@ -81,12 +93,12 @@ RSpec.describe 'Create New User', type: :feature do
 
       fill_in "user[name]", with: "Sammy"
       fill_in "user[email]", with: "sam@emailcom@"
+      fill_in "user[password]", with: 'password'
+      fill_in "user[password_confirmation]", with: 'password'
       click_button 'Create New User'
 
       expect(current_path).to eq(register_user_path)
       expect(page).to have_content('Email is invalid')
     end
-
-    
   end
 end

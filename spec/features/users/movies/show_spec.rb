@@ -3,8 +3,8 @@ require "rails_helper"
 RSpec.describe "Movie Detail Page", type: :feature do
    describe "As a user" do
       before(:each) do
-         @user1 = User.create!(name: 'Tommy', email: 'tommy@email.com', password: 'password')
-         @user2 = User.create!(name: 'Sam', email: 'sam@email.com', password: 'password')
+         @user1 = User.create!(name: 'Tommy', email: 'tommy@email.com', password: 'password', password_confirmation: 'password')
+         @user2 = User.create!(name: 'Sam', email: 'sam@email.com', password: 'password', password_confirmation: 'password')
 
          visit user_movie_path(@user1, 550)
       end

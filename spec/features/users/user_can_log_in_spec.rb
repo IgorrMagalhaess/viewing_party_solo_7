@@ -3,12 +3,12 @@ require 'rails_helper'
 RSpec.describe 'Logging in', type: :feature do
    describe 'as a User' do
       it 'can log in with valid credentials' do
-         user = User.create(name: "Igor", email: "Igor@gmail.com", password: "password")
+         user = User.create(name: "Igor", email: "Igor@gmail.com", password: "password", password_confirmation: "password")
 
          visit root_path
 
          click_button "Login"
-
+         
          expect(current_path).to eq(login_path)
          fill_in :email, with: user.email
          fill_in :password, with: user.password
@@ -20,7 +20,7 @@ RSpec.describe 'Logging in', type: :feature do
       end
 
       it 'can not log in with invalid credentials' do
-         user = User.create(name: "Igor", email: "Igor@gmail.com", password: "password")
+         user = User.create(name: "Igor", email: "Igor@gmail.com", password: "password", password_confirmation: "password")
 
          visit login_path
 

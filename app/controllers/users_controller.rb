@@ -14,16 +14,20 @@ class UsersController < ApplicationController
    end
 
    def create
-      user = user_params
-      user[:email] = user[:email].downcase
-      new_user = User.new(user_params)
-      if new_user.save
-         flash[:success] = "Welcome, #{new_user.name}"
-         redirect_to user_path(new_user)
+      if params[:user][:password] == params[:user][:password_confirmation]
+         new_user = User.new(user_params)
+         if new_user.save
+            session[:user_id] = new_user.id
+            flash[:success] = "Welcome, #{new_user.name}"
+            redirect_to user_path(new_user)
+         else
+            flash[:error] = "#{error_message(new_user.errors)}"
+            redirect_to register_user_path
+         end
       else
-         flash[:error] = "#{error_message(new_user.errors)}"
+         flash[:error] = "Passwords don't match"
          redirect_to register_user_path
-      end   
+      end
    end
 
    def login_form  
@@ -43,7 +47,7 @@ class UsersController < ApplicationController
 private
 
    def user_params
-      params.require(:user).permit(:name, :email, :password)
+      params.require(:user).permit(:name, :email, :password, :password_confirmation)
    end
 
    def initialize_movies_facade(parties)
