@@ -3,9 +3,9 @@ require "rails_helper"
 RSpec.describe "New Viewing Party Page", type: :feature do
    describe "when I visit the new viewing party page" do
       before(:each) do
-         @user1 = User.create!(name: 'Tommy', email: 'tommy@email.com')
-         @user2 = User.create!(name: 'Sam', email: 'sam@email.com')
-         @user3 = User.create!(name: 'Igor', email: 'magalhaess.igor@gmail.com')
+         @user1 = User.create!(name: 'Tommy', email: 'tommy@email.com', password: 'password', password_confirmation: 'password')
+         @user2 = User.create!(name: 'Sam', email: 'sam@email.com', password: 'password', password_confirmation: 'password')
+         @user3 = User.create!(name: 'Igor', email: 'magalhaess.igor@gmail.com', password: 'password', password_confirmation: 'password')
 
          visit new_user_movie_viewing_party_path(@user1, 550)
       end
@@ -35,8 +35,10 @@ RSpec.describe "New Viewing Party Page", type: :feature do
          expect(page).to have_content("Guests:")
 
          User.all.each do |guest|
-            checkbox = find("input[type='checkbox'][value='#{guest.id}']")
-            expect(checkbox).to be_visible
+            if guest.id != @user1.id
+               checkbox = find("input[type='checkbox'][value='#{guest.id}']")
+               expect(checkbox).to be_visible
+            end
          end
       end
 
@@ -50,9 +52,8 @@ RSpec.describe "New Viewing Party Page", type: :feature do
          select "00", from: "_start_time_5i"
 
          within 'fieldset' do
-            3.times do |index|
-               check "viewing_party[user_ids][]", option: User.all[index].id
-            end
+            check "viewing_party[user_ids][]", option: @user2.id
+            check "viewing_party[user_ids][]", option: @user3.id
          end
 
          click_button "Create Viewing Party"
@@ -71,9 +72,8 @@ RSpec.describe "New Viewing Party Page", type: :feature do
          select "00", from: "_start_time_5i"
 
          within 'fieldset' do
-            3.times do |index|
-               check "viewing_party[user_ids][]", option: User.all[index].id
-            end
+            check "viewing_party[user_ids][]", option: @user2.id
+            check "viewing_party[user_ids][]", option: @user3.id
          end
 
          click_button "Create Viewing Party"

@@ -14,23 +14,40 @@ class UsersController < ApplicationController
    end
 
    def create
-      user = User.new(user_params)
-      if user.save
-         flash[:success] = 'Successfully Created New User'
-         redirect_to user_path(user)
+      if params[:user][:password] == params[:user][:password_confirmation]
+         new_user = User.new(user_params)
+         if new_user.save
+            session[:user_id] = new_user.id
+            flash[:success] = "Welcome, #{new_user.name}"
+            redirect_to user_path(new_user)
+         else
+            flash[:error] = "#{error_message(new_user.errors)}"
+            redirect_to register_user_path
+         end
       else
-         flash[:error] = "#{error_message(user.errors)}"
+         flash[:error] = "Passwords don't match"
          redirect_to register_user_path
-      end   
+      end
    end
 
+   def login_form  
+   end
 
-
+   def login
+      user = User.find_by(email: params[:email])
+      if user.authenticate(params[:password])
+         flash[:success] = "Welcome, #{user.name}"
+         redirect_to root_path
+      else
+         flash[:error] = "Sorry, your credentials are invalid"
+         render :login_form
+      end
+   end
 
 private
 
    def user_params
-      params.require(:user).permit(:name, :email)
+      params.require(:user).permit(:name, :email, :password, :password_confirmation)
    end
 
    def initialize_movies_facade(parties)

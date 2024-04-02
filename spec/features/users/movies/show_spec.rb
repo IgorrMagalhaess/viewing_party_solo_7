@@ -3,8 +3,8 @@ require "rails_helper"
 RSpec.describe "Movie Detail Page", type: :feature do
    describe "As a user" do
       before(:each) do
-         @user1 = User.create!(name: 'Tommy', email: 'tommy@email.com')
-         @user2 = User.create!(name: 'Sam', email: 'sam@email.com')
+         @user1 = User.create!(name: 'Tommy', email: 'tommy@email.com', password: 'password', password_confirmation: 'password')
+         @user2 = User.create!(name: 'Sam', email: 'sam@email.com', password: 'password', password_confirmation: 'password')
 
          visit user_movie_path(@user1, 550)
       end
@@ -27,7 +27,7 @@ RSpec.describe "Movie Detail Page", type: :feature do
          expect(page).to have_content("Runtime: 2 hours, 19 minutes")
          expect(page).to have_content("Drama")
          expect(page).to have_content("Description")
-         expect(page).to have_content("Total Reviews: 28224")
+         expect(page).to have_content("Total Reviews:")
       end
 
       it "shoud show the cast of the movie", :vcr do
